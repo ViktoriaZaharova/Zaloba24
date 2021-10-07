@@ -1,0 +1,979 @@
+<!--<?php require_once('header.php'); ?>-->
+<!DOCTYPE html>
+<html lang="en">
+<!--<?php-->
+<!--$v = time();-->
+<!--$v = '1.0.3';-->
+<!--?>-->
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="theme-color" content="#4285f4">
+	<meta name="msapplication-navbutton-color" content="#4285f4">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+		rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+			integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/scripts.js"></script>
+
+</head>
+
+<body>
+	<!--<?php require_once('svg.php'); ?>-->
+	<header>
+		<nav class="navbar">
+			<div class="container-lg">
+				<div class="navbar__wrapper">
+					<a class="navbar__toggler" data-bs-toggle="collapse" href="#nav" role="button">
+						<svg aria-hidden="true" class="navbar__toggler-icon-open">
+							<use xlink:href="svg.svg#icon-bars" />
+						</svg>
+						<svg aria-hidden="true" class="navbar__toggler-icon-close">
+							<use xlink:href="svg.svg#icon-close" />
+						</svg>
+					</a>
+
+					<div class="navbar__logo">
+						<a class="navbar__logo-link" href="#"><img src="uploads/logo.svg" alt="Logo"></a>
+					</div>
+					<div class="navbar__nav">
+						<ul class="nav">
+							<li class="nav__item"><a class="nav__link active" href="#">Главная</a></li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">
+									Жалобы
+									<i class="nav__dropdown" data-menu-dropdown="">
+										<svg aria-hidden="true" class="nav__dropdown-icon">
+											<use xlink:href="#icon-arrow-down"></use>
+										</svg>
+									</i>
+								</a>
+								<div class="nav__sub">
+									<div class="container-md">
+										<div class="nav__sub-wrapper">
+											<div class="nav__sub-item">
+												<div class="nav__sub-head">
+													<div class="nav__sub-icon">
+														<img src="uploads/sub-icon.svg" alt="">
+														<!--                                                    <?php echo file_get_contents('uploads/sub-icon.svg'); ?>-->
+													</div>
+													<div class="nav__sub-title">Общественный транспорт Общественный транспорт</div>
+												</div>
+												<ul class="nav__sub-list">
+													<li class="nav__sub-list-item"><a href="#" class="nav__sub-list-link">Жалоба на врача</a></li>
+													<li class="nav__sub-list-item"><a href="#" class="nav__sub-list-link">Жалобу на
+															поликлинику</a>
+													</li>
+													<li class="nav__sub-list-item"><a href="#" class="nav__sub-list-link">Жалоба на медсестру</a>
+													</li>
+												</ul>
+											</div>
+											<div class="nav__sub-item">
+												<div class="nav__sub-head">
+													<div class="nav__sub-icon">
+														<!--                                                    <?php echo file_get_contents('uploads/sub-icon.svg'); ?>-->
+														<img src="uploads/sub-icon.svg" alt="">
+													</div>
+													<div class="nav__sub-title">Общественный транспорт</div>
+												</div>
+												<ul class="nav__sub-list">
+													<li class="nav__sub-list-item"><a href="#" class="nav__sub-list-link">Жалоба на врача</a></li>
+													<li class="nav__sub-list-item"><a href="#" class="nav__sub-list-link">Жалобу на
+															поликлинику</a>
+													</li>
+													<li class="nav__sub-list-item"><a href="#" class="nav__sub-list-link">Жалоба на детскую
+															поликлинику Жалоба на детскую поликлинику</a></li>
+												</ul>
+												<a class="nav__sub-link" href="#">Посмотреть еще 20 видов жалоб</a>
+											</div>
+											<!--                                        <?php for ($i = 0; $i <= 8; $i++) : ?>-->
+											<div class="nav__sub-item">
+												<div class="nav__sub-head">
+													<div class="nav__sub-icon">
+														<img src="uploads/sub-icon.svg" alt="">
+														<!--                                                    <?php echo file_get_contents('uploads/sub-icon.svg'); ?>-->
+													</div>
+													<div class="nav__sub-title">Поликлиники, больницы</div>
+												</div>
+												<ul class="nav__sub-list">
+													<li class="nav__sub-list-item"><a href="#" class="nav__sub-list-link">Жалоба на врача</a></li>
+													<li class="nav__sub-list-item"><a href="#" class="nav__sub-list-link">Жалобу на
+															поликлинику</a>
+													</li>
+													<li class="nav__sub-list-item"><a href="#" class="nav__sub-list-link">Жалоба на медсестру</a>
+													</li>
+													<li class="nav__sub-list-item"><a href="#" class="nav__sub-list-link">Жалоба на детскую
+															поликлинику</a></li>
+												</ul>
+												<a class="nav__sub-link" href="#">Посмотреть еще 20 видов жалоб</a>
+											</div>
+											<!--                                        <?php endfor; ?>-->
+
+
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav__item"><a class="nav__link" href="#">Проблемы</a></li>
+							<li class="nav__item"><a class="nav__link" href="#">О сервисе</a></li>
+							<li class="nav__item"><a class="nav__link" href="#">Кто мы?</a></li>
+						</ul>
+
+						<ul class="social-mobile">
+							<li class="social-mobile__item">
+								<a class="social-mobile__link" href="#">
+									<svg aria-hidden="true" class="social-mobile__icon">
+										<use xlink:href="svg.svg#icon-fb" />
+									</svg>
+								</a>
+							</li>
+							<li class="social-mobile__item">
+								<a class="social-mobile__link" href="#">
+									<svg aria-hidden="true" class="social-mobile__icon">
+										<use xlink:href="svg.svg#icon-instagram" />
+									</svg>
+								</a>
+							</li>
+							<li class="social-mobile__item">
+								<a class="social-mobile__link" href="#">
+									<svg aria-hidden="true" class="social-mobile__icon">
+										<use xlink:href="svg.svg#icon-vk" />
+									</svg>
+								</a>
+							</li>
+							<li class="social-mobile__item">
+								<a class="social-mobile__link" href="#">
+									<svg aria-hidden="true" class="social-mobile__icon">
+										<use xlink:href="svg.svg#icon-ok" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="navbar__search">
+						<a class="navbar__search-button collapsed" data-bs-toggle="collapse" href="#headSearch" role="button">
+							<svg aria-hidden="true" class="navbar__search-icon open">
+								<use xlink:href="svg.svg#icon-search" />
+							</svg>
+							<svg aria-hidden="true" class="navbar__search-icon close">
+								<use xlink:href="svg.svg#icon-close" />
+							</svg>
+						</a>
+					</div>
+					<div class="navbar__social">
+						<ul class="social">
+							<li class="social__item">
+								<a class="social__link" href="#">
+									<svg aria-hidden="true" class="social__icon">
+										<use xlink:href="svg.svg#icon-fb" />
+									</svg>
+								</a>
+							</li>
+							<li class="social__item">
+								<a class="social__link" href="#">
+									<svg aria-hidden="true" class="social__icon">
+										<use xlink:href="svg.svg#icon-instagram" />
+									</svg>
+								</a>
+							</li>
+							<li class="social__item">
+								<a class="social__link" href="#">
+									<svg aria-hidden="true" class="social__icon">
+										<use xlink:href="svg.svg#icon-vk" />
+									</svg>
+								</a>
+							</li>
+							<li class="social__item">
+								<a class="social__link" href="#">
+									<svg aria-hidden="true" class="social__icon">
+										<use xlink:href="svg.svg#icon-ok" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="header-search" tabindex="-1" id="headSearch">
+
+			<form class="header-search__form">
+				<div class="header-search__group">
+					<input class="header-search__input form-control" type="text" placeholder="Как жаловаться">
+					<button class="header-search__btn btn btn-primary" type="button">
+						<svg aria-hidden="true" class="header-search__icon">
+							<use xlink:href="svg.svg#icon-search" />
+						</svg>
+					</button>
+				</div>
+			</form>
+
+		</div>
+	</header>
+
+	<section class="main-banner main-category">
+		<div class="container-md main-banner__content">
+
+			<h1 class="main-title"><span>Как правильно</span><br /><span class="main-title__primary"><strong>подать
+						жалобу?</strong></span></h1>
+
+			<div class="main-banner__description">
+				<p>Проект «Жалоба24.рф» призван стать интернет- помощником для тех, кто хочет: оперативно решать возникшие
+					проблемы и
+					правильно жаловаться в соответсвующие инстанции.</p>
+			</div>
+		</div>
+
+		<div class="main-banner__bg" style="background-image: url('uploads/category-bg.jpg')"></div>
+		<!-- <div class="main-banner__bg-mobile" style="background-image: url('uploads/main-bg-mobile.jpg')"></div> -->
+	</section>
+
+	<!-- Problems sections -->
+	<section class="problem-tab problem-section-category">
+		<div class="problem-tab__wrapper">
+			<div class="problem-tab__header">
+				<h2 class="problem-tab__title">Выберите жалобу</h2>
+			</div>
+
+			<form class="home-search__form">
+				<div class="home-search__group">
+					<span class="home-search__group-text"><strong>или</strong>найдите на кого пожаловаться:</span>
+					<input class="home-search__group-input form-control" type="text" placeholder="ЖКХ">
+					<button class="home-search__group-btn btn btn-primary" type="button">Найти</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<!-- Category -->
+	<section class="category-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-4 order-lg-1">
+					<div class="category-section__sidebar">
+
+						<ul class="how-it-works__list">
+							<li class="how-it-works__item"><span>ВЫБЕРИТЕ</span> жалобу или проблему</li>
+							<li class="how-it-works__item how-it-works__item-disable"><span>ЗАПОЛНИТЕ</span> форму жалобы</li>
+							<li class="how-it-works__item how-it-works__item-disable"><span>ОПЛАТИТЕ</span> удобным для вас способом
+							</li>
+							<li class="how-it-works__item how-it-works__item-disable"><span>ОТПРАВЬТЕ</span> жалобу следуя инструкции
+							</li>
+						</ul>
+
+						<a href="#" class="btn btn-primary btn-instruction">КАК ПОЛЬЗОВАТЬСЯ СЕРВИСОМ</a>
+
+						<div class="video-box"><img src="img/video-img.jpg" alt=""></div>
+
+						<div class="advantage__item">
+							<div class="advantage__item-head">
+								<div class="advantage__item-icon">
+									<img src="uploads/adv-icon-1.svg" alt="">
+									<!--                <?php echo file_get_contents('uploads/adv-icon-1.svg'); ?>-->
+								</div>
+								<h2 class="advantage__item-title">Анонимно</h2>
+							</div>
+							<div class="advantage__item-content">
+								<p>Мы НЕ ПЕРЕДАЕМ ваши личные данные, наш сервис призван упростить подачу жалоб по возникшим проблемам.
+									Вы
+									сами решаете судьбу вашей жалобы.</p>
+							</div>
+						</div>
+
+						<div class="advantage__item">
+							<div class="advantage__item-head">
+								<div class="advantage__item-icon">
+									<img src="uploads/adv-icon-2.svg" alt="">
+									<!--                <?php echo file_get_contents('uploads/adv-icon-2.svg'); ?>-->
+								</div>
+								<h2 class="advantage__item-title">Оперативно</h2>
+							</div>
+							<div class="advantage__item-content">
+								<p>Вы сразу получаете правильно оформленную жалобу которую можете передать в соответсвующие органы,
+									следуя
+									полученной пошаговой инструкции.</p>
+							</div>
+						</div>
+
+						<div class="advantage__item">
+							<div class="advantage__item-head">
+								<div class="advantage__item-icon">
+									<img src="uploads/adv-icon-3.svg" alt="">
+									<!--                <?php echo file_get_contents('uploads/adv-icon-3.svg'); ?>-->
+								</div>
+								<h2 class="advantage__item-title">Правильно</h2>
+							</div>
+							<div class="advantage__item-content">
+								<p>Юристы с многолетним опытом позаботились о том что ваша жалоба оформленна в соответсвии со всеми
+									требованиями законодательства РФ и будет расмотренна.</p>
+							</div>
+						</div>
+
+						<div class="question-box">
+							<div class="question-box__head">
+								<div class="question-box__icon">
+									<img src="uploads/icon-question.svg" alt="">
+								</div>
+								<h3>У Вас возник вопрос
+									по работе сервиса?</h3>
+							</div>
+
+							<div class="question-box__body">
+								<h4>Наш специалист БЕСПЛАТНО <br>проконсультирует.</h4>
+								<div class="box-text">
+									<p>Сейчас для вас работает 19 специалистов, <br>среднее время ответа 5 мин.</p>
+								</div>
+								<a href="#" class="btn btn-primary">КАК ПОЛЬЗОВАТЬСЯ СЕРВИСОМ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-8">
+					<div class="problem__item panel_heading in">
+						<div class="problem__head block_title">
+							<div class="problem__icon">
+								<svg class="svg-icon">
+									<use xlink:href="uploads/sprite.svg#problem-icon1"></use>
+								</svg>
+								<!-- <img src="uploads/sub-icon.svg" alt=""> -->
+								<!--                  <?php echo file_get_contents('uploads/sub-icon.svg'); ?>-->
+							</div>
+							<div class="problem__title">Поликлиники, больницы</div>
+
+							<div class="problem__item__icon-arrow"><svg class="svg-icon">
+									<use xlink:href="uploads/sprite.svg#arrow-right"></use>
+								</svg></div>
+						</div>
+						<div class="card-body block_hover">
+							<ul class="problem__list">
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на врача</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалобу на поликлинику</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на медсестру</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детскую
+										поликлинику</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на врача</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалобу на поликлинику</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на врача</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалобу на поликлинику</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на медсестру</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детскую
+										поликлинику</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на врача</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалобу на поликлинику</a></li>
+							</ul>
+							<a class="problem__link" href="#">Посмотреть еще 20 видов жалоб</a>
+						</div>
+					</div>
+
+					<div class="problem__item panel_heading">
+						<div class="problem__head block_title">
+							<div class="problem__icon">
+								<svg class="svg-icon">
+									<use xlink:href="uploads/sprite.svg#problem-icon2"></use>
+								</svg>
+								<!-- <img src="uploads/sub-icon.svg" alt=""> -->
+								<!--                  <?php echo file_get_contents('uploads/sub-icon.svg'); ?>-->
+							</div>
+							<div class="problem__title">Школы и детсады</div>
+
+							<div class="problem__item__icon-arrow"><svg class="svg-icon">
+									<use xlink:href="uploads/sprite.svg#arrow-right"></use>
+								</svg></div>
+						</div>
+
+						<div class="card-body block_hover">
+							<ul class="problem__list">
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на директора школы</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детский сад</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на школу</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на учителя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на директора школы</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детский сад</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на директора школы</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детский сад</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на школу</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на учителя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на директора школы</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детский сад</a></li>
+							</ul>
+							<a class="problem__link" href="#">Посмотреть еще 20 видов жалоб</a>
+						</div>
+					</div>
+
+					<div class="problem__item panel_heading">
+						<div class="problem__head block_title">
+							<div class="problem__icon">
+								<svg class="svg-icon">
+									<use xlink:href="uploads/sprite.svg#problem-icon3"></use>
+								</svg>
+								<!-- <img src="uploads/sub-icon.svg" alt=""> -->
+								<!--                  <?php echo file_get_contents('uploads/sub-icon.svg'); ?>-->
+							</div>
+							<div class="problem__title">Работодатели</div>
+
+							<div class="problem__item__icon-arrow"><svg class="svg-icon">
+									<use xlink:href="uploads/sprite.svg#arrow-right"></use>
+								</svg></div>
+						</div>
+
+						<div class="card-body block_hover">
+							<ul class="problem__list">
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На начальника</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На работодателя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">О невыплате заработной платы</a>
+								</li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Коллективная жалоба на
+										руководителя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На начальника</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На работодателя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На начальника</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На работодателя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">О невыплате заработной платы</a>
+								</li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Коллективная жалоба на
+										руководителя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На начальника</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На работодателя</a></li>
+							</ul>
+							<a class="problem__link" href="#">Посмотреть еще 20 видов жалоб</a>
+						</div>
+					</div>
+
+					<div class="problem__item panel_heading">
+						<div class="problem__head block_title">
+							<div class="problem__icon">
+								<svg class="svg-icon">
+									<use xlink:href="uploads/sprite.svg#problem-icon4"></use>
+								</svg>
+								<!-- <img src="uploads/sub-icon.svg" alt=""> -->
+								<!--                  <?php echo file_get_contents('uploads/sub-icon.svg'); ?>-->
+							</div>
+							<div class="problem__title">ЖКХ</div>
+
+							<div class="problem__item__icon-arrow"><svg class="svg-icon">
+									<use xlink:href="uploads/sprite.svg#arrow-right"></use>
+								</svg></div>
+						</div>
+
+						<div class="card-body block_hover">
+							<ul class="problem__list">
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на директора школы</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детский сад</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на школу</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на учителя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на директора школы</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детский сад</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на директора школы</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детский сад</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на школу</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на учителя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на директора школы</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детский сад</a></li>
+							</ul>
+							<a class="problem__link" href="#">Посмотреть еще 20 видов жалоб</a>
+						</div>
+					</div>
+
+					<div class="problem__item panel_heading">
+						<div class="problem__head block_title">
+							<div class="problem__icon">
+								<svg class="svg-icon">
+									<use xlink:href="uploads/sprite.svg#problem-icon5"></use>
+								</svg>
+								<!-- <img src="uploads/sub-icon.svg" alt=""> -->
+								<!--                  <?php echo file_get_contents('uploads/sub-icon.svg'); ?>-->
+							</div>
+							<div class="problem__title">Общественный транспорт</div>
+
+							<div class="problem__item__icon-arrow"><svg class="svg-icon">
+									<use xlink:href="uploads/sprite.svg#arrow-right"></use>
+								</svg></div>
+						</div>
+
+						<div class="card-body block_hover">
+							<ul class="problem__list">
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на директора школы</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детский сад</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на школу</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на учителя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на директора школы</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детский сад</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на директора школы</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детский сад</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на школу</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на учителя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на директора школы</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детский сад</a></li>
+							</ul>
+							<a class="problem__link" href="#">Посмотреть еще 20 видов жалоб</a>
+						</div>
+					</div>
+
+					<div class="problem__item panel_heading">
+						<div class="problem__head block_title">
+							<div class="problem__icon">
+								<svg class="svg-icon">
+									<use xlink:href="uploads/sprite.svg#problem-icon6"></use>
+								</svg>
+								<!-- <img src="uploads/sub-icon.svg" alt=""> -->
+								<!--                  <?php echo file_get_contents('uploads/sub-icon.svg'); ?>-->
+							</div>
+							<div class="problem__title">Товары и услуги</div>
+
+							<div class="problem__item__icon-arrow"><svg class="svg-icon">
+									<use xlink:href="uploads/sprite.svg#arrow-right"></use>
+								</svg></div>
+						</div>
+
+						<div class="card-body block_hover">
+							<ul class="problem__list">
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На начальника</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На работодателя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">О невыплате заработной платы</a>
+								</li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Коллективная жалоба на
+										руководителя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На начальника</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На работодателя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На начальника</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На работодателя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">О невыплате заработной платы</a>
+								</li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Коллективная жалоба на
+										руководителя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На начальника</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На работодателя</a></li>
+							</ul>
+							<a class="problem__link" href="#">Посмотреть еще 20 видов жалоб</a>
+						</div>
+					</div>
+
+					<div class="problem__item panel_heading">
+						<div class="problem__head block_title">
+							<div class="problem__icon">
+								<svg class="svg-icon">
+									<use xlink:href="uploads/sprite.svg#problem-icon2"></use>
+								</svg>
+								<!-- <img src="uploads/sub-icon.svg" alt=""> -->
+								<!--                  <?php echo file_get_contents('uploads/sub-icon.svg'); ?>-->
+							</div>
+							<div class="problem__title">Школы и детсады</div>
+
+							<div class="problem__item__icon-arrow"><svg class="svg-icon">
+									<use xlink:href="uploads/sprite.svg#arrow-right"></use>
+								</svg></div>
+						</div>
+
+						<div class="card-body block_hover">
+							<ul class="problem__list">
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на директора школы</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детский сад</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на школу</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на учителя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на директора школы</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детский сад</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на директора школы</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детский сад</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на школу</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на учителя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на директора школы</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детский сад</a></li>
+							</ul>
+							<a class="problem__link" href="#">Посмотреть еще 20 видов жалоб</a>
+						</div>
+					</div>
+
+					<div class="problem__item panel_heading">
+						<div class="problem__head block_title">
+							<div class="problem__icon">
+								<svg class="svg-icon">
+									<use xlink:href="uploads/sprite.svg#problem-icon3"></use>
+								</svg>
+								<!-- <img src="uploads/sub-icon.svg" alt=""> -->
+								<!--                  <?php echo file_get_contents('uploads/sub-icon.svg'); ?>-->
+							</div>
+							<div class="problem__title">Работодатели</div>
+
+							<div class="problem__item__icon-arrow"><svg class="svg-icon">
+									<use xlink:href="uploads/sprite.svg#arrow-right"></use>
+								</svg></div>
+						</div>
+
+						<div class="card-body block_hover">
+							<ul class="problem__list">
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На начальника</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На работодателя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">О невыплате заработной платы</a>
+								</li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Коллективная жалоба на
+										руководителя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На начальника</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На работодателя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На начальника</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На работодателя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">О невыплате заработной платы</a>
+								</li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Коллективная жалоба на
+										руководителя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На начальника</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На работодателя</a></li>
+							</ul>
+							<a class="problem__link" href="#">Посмотреть еще 20 видов жалоб</a>
+						</div>
+					</div>
+
+					<div class="problem__item panel_heading">
+						<div class="problem__head block_title">
+							<div class="problem__icon">
+								<svg class="svg-icon">
+									<use xlink:href="uploads/sprite.svg#problem-icon4"></use>
+								</svg>
+								<!-- <img src="uploads/sub-icon.svg" alt=""> -->
+								<!--                  <?php echo file_get_contents('uploads/sub-icon.svg'); ?>-->
+							</div>
+							<div class="problem__title">ЖКХ</div>
+
+							<div class="problem__item__icon-arrow"><svg class="svg-icon">
+									<use xlink:href="uploads/sprite.svg#arrow-right"></use>
+								</svg></div>
+						</div>
+
+						<div class="card-body block_hover">
+							<ul class="problem__list">
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на директора школы</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детский сад</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на школу</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на учителя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на директора школы</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детский сад</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на директора школы</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детский сад</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на школу</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на учителя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на директора школы</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детский сад</a></li>
+							</ul>
+							<a class="problem__link" href="#">Посмотреть еще 20 видов жалоб</a>
+						</div>
+					</div>
+
+					<div class="problem__item panel_heading">
+						<div class="problem__head block_title">
+							<div class="problem__icon">
+								<svg class="svg-icon">
+									<use xlink:href="uploads/sprite.svg#problem-icon5"></use>
+								</svg>
+								<!-- <img src="uploads/sub-icon.svg" alt=""> -->
+								<!--                  <?php echo file_get_contents('uploads/sub-icon.svg'); ?>-->
+							</div>
+							<div class="problem__title">Общественный транспорт</div>
+
+							<div class="problem__item__icon-arrow"><svg class="svg-icon">
+									<use xlink:href="uploads/sprite.svg#arrow-right"></use>
+								</svg></div>
+						</div>
+
+						<div class="card-body block_hover">
+							<ul class="problem__list">
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на директора школы</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детский сад</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на школу</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на учителя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на директора школы</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детский сад</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на директора школы</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детский сад</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на школу</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на учителя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на директора школы</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Жалоба на детский сад</a></li>
+							</ul>
+							<a class="problem__link" href="#">Посмотреть еще 20 видов жалоб</a>
+						</div>
+					</div>
+
+					<div class="problem__item panel_heading">
+						<div class="problem__head block_title">
+							<div class="problem__icon">
+								<svg class="svg-icon">
+									<use xlink:href="uploads/sprite.svg#problem-icon6"></use>
+								</svg>
+								<!-- <img src="uploads/sub-icon.svg" alt=""> -->
+								<!--                  <?php echo file_get_contents('uploads/sub-icon.svg'); ?>-->
+							</div>
+							<div class="problem__title">Товары и услуги</div>
+
+							<div class="problem__item__icon-arrow"><svg class="svg-icon">
+									<use xlink:href="uploads/sprite.svg#arrow-right"></use>
+								</svg></div>
+						</div>
+
+						<div class="card-body block_hover">
+							<ul class="problem__list">
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На начальника</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На работодателя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">О невыплате заработной платы</a>
+								</li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Коллективная жалоба на
+										руководителя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На начальника</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На работодателя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На начальника</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На работодателя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">О невыплате заработной платы</a>
+								</li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Коллективная жалоба на
+										руководителя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На начальника</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На работодателя</a></li>
+							</ul>
+							<a class="problem__link" href="#">Посмотреть еще 20 видов жалоб</a>
+						</div>
+					</div>
+
+					<div class="problem__item panel_heading">
+						<div class="problem__head block_title">
+							<div class="problem__icon">
+								<svg class="svg-icon fill-none">
+									<use xlink:href="uploads/sprite.svg#problem-icon7"></use>
+								</svg>
+								<!-- <img src="uploads/sub-icon.svg" alt=""> -->
+								<!--                  <?php echo file_get_contents('uploads/sub-icon.svg'); ?>-->
+							</div>
+							<div class="problem__title">Другое</div>
+
+							<div class="problem__item__icon-arrow"><svg class="svg-icon">
+									<use xlink:href="uploads/sprite.svg#arrow-right"></use>
+								</svg></div>
+						</div>
+
+						<div class="card-body block_hover">
+							<ul class="problem__list">
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На начальника</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На работодателя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">О невыплате заработной платы</a>
+								</li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Коллективная жалоба на
+										руководителя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На начальника</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На работодателя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На начальника</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На работодателя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">О невыплате заработной платы</a>
+								</li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">Коллективная жалоба на
+										руководителя</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На начальника</a></li>
+								<li class="problem__list-item"><a href="#" class="problem__list-link">На работодателя</a></li>
+							</ul>
+							<a class="problem__link" href="#">Посмотреть еще 20 видов жалоб</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	<section class="offer bg-grey">
+		<div class="container-lg">
+			<div class="row align-items-center mb-40">
+				<div class="col-12 col-md-5 col-lg-4">
+					<h2 class="problem-tab__title">Что предлагает cайт Жалоба24</h2>
+				</div>
+				<div class="col-12 col-md-7 col-lg-8">
+					<div class="box-text">
+						<p>Для вас работают опытные юристы, специализирующиеся в различных отраслях законодательства и ведущие
+							ежедневную
+							практическую деятельность. Все консультации адвоката составляются с учетом современного состояния
+							правового поля.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12">
+					<div class="offer-box">
+						<h5 class="text-uppercase">У нас вы можете:</h5>
+						<ul class="problem__list">
+							<li class="problem__list-item"><span class="problem__list-link">ознакомиться со статьями по актуальным и
+									интересным многим темам трудового, гражданского и семейного законодательства</span></li>
+
+							<li class="problem__list-item"><span class="problem__list-link">получить консультацию адвоката онлайн,
+									задав
+									вопросы по бесплатному номеру телефона или сформулировав проблему в виде
+									письменного запроса</span></li>
+							<li class="problem__list-item"><span class="problem__list-link">узнать о новых изменениях в
+									законодательстве
+									и уточнить действенность ранее существовавших законодательных норм</span></li>
+							<li class="problem__list-item"><span class="problem__list-link">сохранить полную конфиденциальность
+									заданных
+									вопросов и ответов, так как мы не просим документов, удостоверяющих
+									личность</span></li>
+							<li class="problem__list-item"><span class="problem__list-link">увидеть свою ситуацию с точки зрения
+									действующих норм и судебной практики и оценить перспективы решения проблемы.</span></li>
+
+						</ul>
+
+						<div class="box-text">
+							<p>Предлагаем бесплатную помощь адвоката всем, кто нуждается в срочных квалифицированных ответах по
+								возникшим случаям.
+							</p>
+						</div>
+					</div>
+
+					<div class="instruction-complaint">
+						<p>Как правильно написать жалобу? Как пожаловаться так, что бы она была побыстрее рассмотрена, а не
+							затерялась
+							в
+							бюрократических коридорах власти? Как составить и оформить жалобу так, чтобы на нее был получен ответ и
+							было
+							принято
+							необходимое вам решение? На нашем сайте можно просмотреть грамотно составленные образцы жалоб граждан на
+							все
+							случаи
+							жизни.</p>
+					</div>
+
+					<div class="offer-box">
+						<h5 class="text-uppercase">Здесь вы найдете:</h5>
+						<ul class="problem__list">
+							<li class="problem__list-item"><span class="problem__list-link">Статьи, разъясняющие различные ситуации с
+									юридической точки зрения</span></li>
+							<li class="problem__list-item"><span class="problem__list-link">Пошаговые инструкции по насущным
+									вопросам</span></li>
+							<li class="problem__list-item"><span class="problem__list-link">Словарь юридических терминов</span></li>
+							<li class="problem__list-item"><span class="problem__list-link">Шаблоны часто используемых
+									документов</span></li>
+							<li class="problem__list-item"><span class="problem__list-link">Справочник адресов необходимых служб и
+									организаций</span></li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--<?php require_once('footer.php'); ?>-->
+
+	<footer>
+		<div class="footer">
+			<div class="footer__inner">
+				<div class="container">
+					<div class="footer__row">
+						<div class="footer__col">
+							<div class=" footer__logo">
+								<img src="uploads/logo.svg" alt="">
+							</div>
+							<div class="footer__description">
+								<span>Жалоба документ, содержащий требование (письменное) или обращение с целью устранить нарушение
+									законных прав и интересов прав и законных интересов. Жалоба является основным инструментом
+									гражданского общества при защите законных и интересов и основной способ восстановления нарушенных
+									прав.</span>
+							</div>
+						</div>
+						<div class="footer__col">
+							<h3 class="footer__title">Горячая линия</h3>
+							<a href="#" class="footer__tel">
+								<svg aria-hidden="true" class="footer__tel-icon">
+									<use xlink:href="svg.svg#icon-phone" />
+								</svg>
+								<span>8 800 800 88 88</span>
+							</a>
+
+							<a href="#" class="footer__email">
+								<svg aria-hidden="true" class="footer__email-icon">
+									<use xlink:href="svg.svg#icon-email" />
+								</svg>
+								<span>info@жфлоба24.рф</span>
+							</a>
+
+							<div class="footer__social">
+								<h3 class="footer__social-title">Мы в соцсетях</h3>
+								<ul class="footer__social-list">
+									<li class="footer__social-item">
+										<a class="footer__social-link" href="#">
+											<svg aria-hidden="true" class="footer__social-icon">
+												<use xlink:href="svg.svg#icon-fb" />
+											</svg>
+										</a>
+									</li>
+									<li class="footer__social-item">
+										<a class="footer__social-link" href="#">
+											<svg aria-hidden="true" class="footer__social-icon">
+												<use xlink:href="svg.svg#icon-instagram" />
+											</svg>
+										</a>
+									</li>
+									<li class="footer__social-item">
+										<a class="footer__social-link" href="#">
+											<svg aria-hidden="true" class="footer__social-icon">
+												<use xlink:href="svg.svg#icon-vk" />
+											</svg>
+										</a>
+									</li>
+									<li class="footer__social-item">
+										<a class="footer__social-link" href="#">
+											<svg aria-hidden="true" class="footer__social-icon">
+												<use xlink:href="svg.svg#icon-ok" />
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer__col">
+							<ul class="footer__menu">
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link">О портале</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link">Жалобы</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link">Информация</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link">Ответы на вопросы</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link">Пользовательское соглашение</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link">Политика конфиденциальности</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link">Карта сайта</a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyrights">
+			<span class="copyrights__text">Все права защищены. © 2014-
+				<?= date('Y'); ?>
+			</span>
+		</div>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,811 @@
+<!--<?php require_once('header.php'); ?>-->
+<!DOCTYPE html>
+<html lang="en">
+<!--<?php-->
+<!--$v = time();-->
+<!--$v = '1.0.3';-->
+<!--?>-->
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="theme-color" content="#4285f4">
+	<meta name="msapplication-navbutton-color" content="#4285f4">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/scripts.js"></script>
+
+</head>
+
+<body>
+	<!--<?php require_once('svg.php'); ?>-->
+	<header>
+		<nav class="navbar">
+			<div class="container-lg">
+				<div class="navbar__wrapper">
+					<a class="navbar__toggler" data-bs-toggle="collapse" href="#nav" role="button">
+						<svg aria-hidden="true" class="navbar__toggler-icon-open">
+							<use xlink:href="svg.svg#icon-bars" />
+						</svg>
+						<svg aria-hidden="true" class="navbar__toggler-icon-close">
+							<use xlink:href="svg.svg#icon-close" />
+						</svg>
+					</a>
+
+					<div class="navbar__logo">
+						<a class="navbar__logo-link" href="#"><img src="uploads/logo.svg" alt="Logo"></a>
+					</div>
+					<div class="navbar__nav">
+						<ul class="nav">
+							<li class="nav__item"><a class="nav__link active" href="#">Главная</a></li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">
+									Жалобы
+									<i class="nav__dropdown" data-menu-dropdown="">
+										<svg aria-hidden="true" class="nav__dropdown-icon">
+											<use xlink:href="#icon-arrow-down"></use>
+										</svg>
+									</i>
+								</a>
+								<div class="nav__sub">
+									<div class="container-md">
+										<div class="nav__sub-wrapper">
+											<div class="nav__sub-item">
+												<div class="nav__sub-head">
+													<div class="nav__sub-icon">
+														<img src="uploads/sub-icon.svg" alt="">
+														<!--                                                    <?php echo file_get_contents('uploads/sub-icon.svg'); ?>-->
+													</div>
+													<div class="nav__sub-title">Общественный транспорт Общественный транспорт</div>
+												</div>
+												<ul class="nav__sub-list">
+													<li class="nav__sub-list-item"><a href="#" class="nav__sub-list-link">Жалоба на врача</a></li>
+													<li class="nav__sub-list-item"><a href="#" class="nav__sub-list-link">Жалобу на
+															поликлинику</a>
+													</li>
+													<li class="nav__sub-list-item"><a href="#" class="nav__sub-list-link">Жалоба на медсестру</a>
+													</li>
+												</ul>
+											</div>
+											<div class="nav__sub-item">
+												<div class="nav__sub-head">
+													<div class="nav__sub-icon">
+														<!--                                                    <?php echo file_get_contents('uploads/sub-icon.svg'); ?>-->
+														<img src="uploads/sub-icon.svg" alt="">
+													</div>
+													<div class="nav__sub-title">Общественный транспорт</div>
+												</div>
+												<ul class="nav__sub-list">
+													<li class="nav__sub-list-item"><a href="#" class="nav__sub-list-link">Жалоба на врача</a></li>
+													<li class="nav__sub-list-item"><a href="#" class="nav__sub-list-link">Жалобу на
+															поликлинику</a>
+													</li>
+													<li class="nav__sub-list-item"><a href="#" class="nav__sub-list-link">Жалоба на детскую
+															поликлинику Жалоба на детскую поликлинику</a></li>
+												</ul>
+												<a class="nav__sub-link" href="#">Посмотреть еще 20 видов жалоб</a>
+											</div>
+											<!--                                        <?php for ($i = 0; $i <= 8; $i++) : ?>-->
+											<div class="nav__sub-item">
+												<div class="nav__sub-head">
+													<div class="nav__sub-icon">
+														<img src="uploads/sub-icon.svg" alt="">
+														<!--                                                    <?php echo file_get_contents('uploads/sub-icon.svg'); ?>-->
+													</div>
+													<div class="nav__sub-title">Поликлиники, больницы</div>
+												</div>
+												<ul class="nav__sub-list">
+													<li class="nav__sub-list-item"><a href="#" class="nav__sub-list-link">Жалоба на врача</a></li>
+													<li class="nav__sub-list-item"><a href="#" class="nav__sub-list-link">Жалобу на
+															поликлинику</a>
+													</li>
+													<li class="nav__sub-list-item"><a href="#" class="nav__sub-list-link">Жалоба на медсестру</a>
+													</li>
+													<li class="nav__sub-list-item"><a href="#" class="nav__sub-list-link">Жалоба на детскую
+															поликлинику</a></li>
+												</ul>
+												<a class="nav__sub-link" href="#">Посмотреть еще 20 видов жалоб</a>
+											</div>
+											<!--                                        <?php endfor; ?>-->
+
+
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav__item"><a class="nav__link" href="#">Проблемы</a></li>
+							<li class="nav__item"><a class="nav__link" href="#">О сервисе</a></li>
+							<li class="nav__item"><a class="nav__link" href="#">Кто мы?</a></li>
+						</ul>
+
+						<ul class="social-mobile">
+							<li class="social-mobile__item">
+								<a class="social-mobile__link" href="#">
+									<svg aria-hidden="true" class="social-mobile__icon">
+										<use xlink:href="svg.svg#icon-fb" />
+									</svg>
+								</a>
+							</li>
+							<li class="social-mobile__item">
+								<a class="social-mobile__link" href="#">
+									<svg aria-hidden="true" class="social-mobile__icon">
+										<use xlink:href="svg.svg#icon-instagram" />
+									</svg>
+								</a>
+							</li>
+							<li class="social-mobile__item">
+								<a class="social-mobile__link" href="#">
+									<svg aria-hidden="true" class="social-mobile__icon">
+										<use xlink:href="svg.svg#icon-vk" />
+									</svg>
+								</a>
+							</li>
+							<li class="social-mobile__item">
+								<a class="social-mobile__link" href="#">
+									<svg aria-hidden="true" class="social-mobile__icon">
+										<use xlink:href="svg.svg#icon-ok" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="navbar__search">
+						<a class="navbar__search-button collapsed" data-bs-toggle="collapse" href="#headSearch" role="button">
+							<svg aria-hidden="true" class="navbar__search-icon open">
+								<use xlink:href="svg.svg#icon-search" />
+							</svg>
+							<svg aria-hidden="true" class="navbar__search-icon close">
+								<use xlink:href="svg.svg#icon-close" />
+							</svg>
+						</a>
+					</div>
+					<div class="navbar__social">
+						<ul class="social">
+							<li class="social__item">
+								<a class="social__link" href="#">
+									<svg aria-hidden="true" class="social__icon">
+										<use xlink:href="svg.svg#icon-fb" />
+									</svg>
+								</a>
+							</li>
+							<li class="social__item">
+								<a class="social__link" href="#">
+									<svg aria-hidden="true" class="social__icon">
+										<use xlink:href="svg.svg#icon-instagram" />
+									</svg>
+								</a>
+							</li>
+							<li class="social__item">
+								<a class="social__link" href="#">
+									<svg aria-hidden="true" class="social__icon">
+										<use xlink:href="svg.svg#icon-vk" />
+									</svg>
+								</a>
+							</li>
+							<li class="social__item">
+								<a class="social__link" href="#">
+									<svg aria-hidden="true" class="social__icon">
+										<use xlink:href="svg.svg#icon-ok" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="header-search" tabindex="-1" id="headSearch">
+
+			<form class="header-search__form">
+				<div class="header-search__group">
+					<input class="header-search__input form-control" type="text" placeholder="Как жаловаться">
+					<button class="header-search__btn btn btn-primary" type="button">
+						<svg aria-hidden="true" class="header-search__icon">
+							<use xlink:href="svg.svg#icon-search" />
+						</svg>
+					</button>
+				</div>
+			</form>
+
+		</div>
+	</header>
+
+	<section class="main-banner main-category main-complaint">
+		<div class="container-md main-banner__content">
+
+			<h1 class="main-title"><span>Жалоба на</span><br /><span class="main-title__primary"><strong>управляющую
+						компанию</strong></span></h1>
+
+			<div class="main-complaint-wrapper">
+				<div class="main-banner__description">
+					<p>Многие люди просто не занют как правильно подать жалобу в прокуратуру на управляющую компанию. Вы можете
+						найти в
+						интернете образец жалобы но лучше использовать чательно проработанный юристами бланк заявлени.
+					</p>
+					<p>Мы также предоставим подробную пошаговую инструкцию куда направить жалобу и как вести себя с органами
+						власти!
+					</p>
+
+					<nav aria-label="breadcrumb" class="nav-breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="#">Главная</a></li>
+							<li class="breadcrumb-item"><a href="#">Жалобы</a></li>
+							<li class="breadcrumb-item"><a href="#">ЖКХ</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Жалоба на управляющую компанию</li>
+						</ol>
+					</nav>
+				</div>
+
+				<div class="main-complaint-box">
+					<div class="main-complaint-box__info">
+						<strong>ВСЕГО
+							<div class="complaint-val">15 866</div>
+							жалоб
+						</strong>
+						<p>Сформировано через наш сервис</p>
+					</div>
+
+					<div class="main-complaint-box__info">
+						<strong>В РОССИИ
+							<div class="complaint-val">15 866</div>
+							людей
+						</strong>
+						<p>Платят за незаконный капремонт</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-banner__bg" style="background-image: url('uploads/complaint-bg.jpg')"></div>
+		<!-- <div class="main-banner__bg-mobile" style="background-image: url('uploads/main-bg-mobile.jpg')"></div> -->
+	</section>
+
+
+	<!-- Stages-complaint -->
+	<section class="stages-complaint bg-grey">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<ul class="how-it-works__list">
+						<li class="how-it-works__item how-it-works__item-check">
+							<div class="icon-check-stage"><svg class="svg-icon">
+									<use xlink:href="uploads/sprite.svg#check-icon"></use>
+								</svg></div>
+							<div class="how-it-works__item-check-body">
+								<span>ВЫБЕРИТЕ</span> жалобу или проблему
+							</div>
+						</li>
+						<li class="how-it-works__item">
+							<div class="how-it-works__item-check-body">
+								<span>ЗАПОЛНИТЕ</span> форму жалобы
+							</div>
+						</li>
+						<li class="how-it-works__item how-it-works__item-disable">
+							<div class="how-it-works__item-check-body"><span>ОПЛАТИТЕ</span> удобным для вас способом</div>
+						</li>
+						<li class="how-it-works__item how-it-works__item-disable">
+							<div class="how-it-works__item-check-body"><span>ОТПРАВЬТЕ</span> жалобу следуя инструкции</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Category -->
+	<section class="category-section complaint-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-4 order-lg-1">
+					<div class="category-section__sidebar">
+						<div class="complaint-result">
+							<h3>Заполнив форму жалобы <br>и оплатив заявку вы получите</h3>
+
+							<div class="complaint-result-box">
+								<div class="complaint-result-box__icon">
+									<svg class="svg-icon">
+										<use xlink:href="uploads/sprite.svg#instruction-icon"></use>
+									</svg>
+								</div>
+								<div class="complaint-result-box__body">
+									<h4>Инструкцию</h4>
+									<p>Подробную пошаговую инструкцию что необходимо сделать и куда необходимо направить жалобу что бы
+										исправить ситуацию</p>
+									<a href="#" class="pdf-link">
+										<svg class="svg-icon">
+											<use xlink:href="uploads/sprite.svg#pdf-icon"></use>
+										</svg>
+										<span>Скачать образец инструкции</span>
+									</a>
+								</div>
+							</div>
+
+							<div class="complaint-result-box">
+								<div class="complaint-result-box__icon">
+									<svg class="svg-icon">
+										<use xlink:href="uploads/sprite.svg#complaint-icon"></use>
+									</svg>
+								</div>
+								<div class="complaint-result-box__body">
+									<h4>жалобу</h4>
+									<p>Правильно оформленную жалобу которую необходимо направить в соответсвующий орган используя
+										прилагаемую инструкцию</p>
+									<a href="#" class="pdf-link">
+										<svg class="svg-icon">
+											<use xlink:href="uploads/sprite.svg#pdf-icon"></use>
+										</svg>
+										<span>Скачать образец инструкции</span>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="price-instruction">
+							<p>Стоимость формирования <strong>Инструкции и Готовой жалобы</strong></p>
+							<div class="price-instruction__val">500 <i class="fas fa-ruble-sign rub-icon"></i></div>
+						</div>
+
+						<a href="#" class="btn btn-primary btn-instruction">КАК ПОЛЬЗОВАТЬСЯ СЕРВИСОМ</a>
+
+						<div class="video-box"><img src="img/video-img.jpg" alt=""></div>
+
+						<div class="question-box">
+							<div class="question-box__head">
+								<div class="question-box__icon">
+									<img src="uploads/icon-question.svg" alt="">
+								</div>
+								<h3>У Вас возник вопрос
+									по работе сервиса?</h3>
+							</div>
+
+							<div class="question-box__body">
+								<h4>Наш специалист БЕСПЛАТНО <br>проконсультирует.</h4>
+								<div class="box-text">
+									<p>Сейчас для вас работает 19 специалистов, <br>среднее время ответа 5 мин.</p>
+								</div>
+								<a href="#" class="btn btn-primary">КАК ПОЛЬЗОВАТЬСЯ СЕРВИСОМ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-8">
+					<form method="post" class="form">
+						<h3 class="form-title">ЖАЛОБА</h3>
+
+						<div class="protection">
+							<svg class="protection-icon svg-icon">
+								<use xlink:href="uploads/sprite.svg#security"></use>
+							</svg>
+							<span>Ваши данные
+								под защитой</span>
+						</div>
+
+						<div class="form-row">
+							<div class="row">
+								<div class="col-12">
+									<h4>ОТ КОГО:</h4>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 col-lg-4">
+									<div class="form-group">
+
+										<input type="text" class="form-control" id="exampleInputFirstName" required>
+										<label for="exampleInputFirstName" class="form-label">Фамилия</label>
+									</div>
+								</div>
+								<div class="col-12 col-lg-4">
+									<div class="form-group">
+										<input type="text" class="form-control" id="exampleInputName" required>
+										<label for="exampleInputName" class="form-label">Имя</label>
+									</div>
+								</div>
+								<div class="col-12 col-lg-4">
+									<div class="form-group">
+										<input type="text" class="form-control" id="exampleInputLastName" required>
+										<label for="exampleInputLastName" class="form-label">Отчество</label>
+									</div>
+								</div>
+
+								<div class="col-12">
+									<small class="form-text">Данные требуются для формирования заявления. Они не будут передан третим
+										лицам</small>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-12 col-lg-6">
+									<div class="form-group">
+										<input type="text" class="form-control" id="exampleInputEMail" required>
+										<label for="exampleInputEmail" class="form-label">E-mail</label>
+									</div>
+								</div>
+								<div class="col-12 col-lg-6">
+									<div class="form-group">
+										<input type="text" class="form-control" id="exampleInputTel" required>
+										<label for="exampleInputTel" class="form-label">Телефон</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="row">
+								<div class="col-12">
+									<h4>Телефон</h4>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 col-lg-6">
+									<div class="form-group">
+										<input type="text" class="form-control" id="exampleInputCity" required>
+										<label for="exampleInputCity" class="form-label">Город, населенный пункт</label>
+									</div>
+								</div>
+								<div class="col-12 col-lg-6">
+									<div class="form-group">
+										<input type="text" class="form-control" id="exampleInputStreet" required>
+										<label for="exampleInputStreet" class="form-label">Улица</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-12 col-lg-3">
+									<div class="form-group">
+										<input type="text" class="form-control" id="exampleInputIndex" required>
+										<label for="exampleInputIndex" class="form-label">Индекс</label>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<div class="form-group">
+										<input type="text" class="form-control" id="exampleInputHouse" required>
+										<label for="exampleInputHouse" class="form-label">Дом</label>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<div class="form-group">
+										<input type="text" class="form-control" id="exampleInputFrame" required>
+										<label for="exampleInputTel" class="form-label">Корпус</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row border-none">
+							<div class="row">
+								<div class="col-12">
+									<h4>Кому</h4>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="form-group">
+										<input type="text" class="form-control" id="exampleInputRegion" required>
+										<label for="exampleInputRegion" class="form-label">Ростовская область</label>
+									</div>
+								</div>
+								<div class="col-12">
+									<ul class="list-check">
+										<li>Государственная жилищная инспекция</li>
+										<li>Министерство ЖКХ</li>
+										<li>Правительство</li>
+										<li>Прокуратура</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row border-none">
+							<div class="row">
+								<div class="col-12 text-center">
+									<h4>Заявление</h4>
+								</div>
+
+								<div class="col-12">
+									<div class="statement-box">
+										<p>Сообщаю, что по адресу: <strong>Россия, Ростовская область</strong> <a href="#"
+												class="color-blue text-decoration font-bold style-italic d-inline link-edit-address">Изменить
+												адрес</a></p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="form-row border-none">
+							<div class="row">
+								<div class="col-12">
+									<h4>НАИМЕНОВАНИЕ УПРАВЛЯЮЩЕЙ КОМПАНИИ</h4>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="form-group">
+										<select class="form-control form-select" id="exampleFormControlSelect1">
+											<option>Полностью или частично отсутсвует горячая вода</option>
+											<option>Полностью или частично отсутсвует горячая вода</option>
+											<option>5</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row border-none">
+							<div class="row">
+								<div class="col-12">
+									<h4>ВЫБЕРИТЕ ПРОБЛЕМУ</h4>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 col-lg-6">
+									<div class="form-group">
+										<input type="text" class="form-control" id="exampleInputForm" required>
+										<label for="exampleInputForm" class="form-label">Форма управления - ЖСК, ТСЖ, УК</label>
+									</div>
+								</div>
+
+								<div class="col-12 col-lg-6">
+									<div class="form-group">
+										<input type="text" class="form-control" id="exampleInputNameCompany" required>
+										<label for="exampleInputNameCompany" class="form-label">Название управляющей компании</label>
+									</div>
+								</div>
+
+								<div class="col-12">
+									<div class="form-group">
+										<label for="exampleFormControlFile1" class="form-file">
+											<span class="form-file-text">
+												<div class="form-file__icon"><svg class="svg-icon">
+														<use xlink:href="uploads/sprite.svg#clip"></use>
+													</svg></div>
+												ПРИЛОЖИТЕ ФАЙЛ
+											</span>
+										</label>
+										<input type="file" class="form-control-file" id="exampleFormControlFile1">
+									</div>
+								</div>
+
+								<div class="col-12">
+									<div class="statement-item">
+										<p>На основании ФЗ «О порядке рассмотрения обращений граждан Российской Федерации», ФЗ «Об
+											образовании в Российской
+											Федерации» прошу:</p>
+
+										<ul class="list-dots">
+											<li>провести проверку по указанным фактам и в случае выявления правонарушений, предусмотренных
+												законодательством Российской
+												Федерации, привлечь виновных лиц к ответственности;</li>
+											<li>провести проверку по указанным фактам и в случае выявления правонарушений, предусмотренных
+												законодательством Российской
+												Федерации, привлечь виновных лиц к ответственности;</li>
+											<li>провести проверку по указанным фактам и в случае выявления правонарушений, предусмотренных
+												законодательством Российской
+												Федерации, привлечь виновных лиц к ответственности;</li>
+										</ul>
+									</div>
+
+									<div class="consent">
+										<a href="#" class="links-text text-center text-decoration color-blue">ПОЛНЫЙ ТЕКСТ ЗАЯВЛЕНИЯ</a>
+										<div class="box-text style-italic">
+											<p>Отправляя заявку, вы соглашаетесь, что ознакомлены с <a href="#" class="d-inline text-decoration color-blue font-bold">правилами</a> (договором-оферты) портала
+												(сервиса) «Жалоба24.рф» и
+												<a href="#" class="d-inline text-decoration font-bold color-blue">политикой конфиденциальности.</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<button type="submit" class="btn btn-primary btn-form">ПЕРЕЙТИ К ОПЛАТЕ</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="offer bg-grey">
+		<div class="container-lg">
+			<div class="row align-items-center mb-40">
+				<div class="col-12 col-md-5 col-lg-4">
+					<h2 class="problem-tab__title">Что предлагает cайт Жалоба24</h2>
+				</div>
+				<div class="col-12 col-md-7 col-lg-8">
+					<div class="box-text">
+						<p>Для вас работают опытные юристы, специализирующиеся в различных отраслях законодательства и ведущие
+							ежедневную
+							практическую деятельность. Все консультации адвоката составляются с учетом современного состояния
+							правового поля.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12">
+					<div class="offer-box">
+						<h5 class="text-uppercase">У нас вы можете:</h5>
+						<ul class="problem__list">
+							<li class="problem__list-item"><span class="problem__list-link">ознакомиться со статьями по актуальным и
+									интересным многим темам трудового, гражданского и семейного законодательства</span></li>
+
+							<li class="problem__list-item"><span class="problem__list-link">получить консультацию адвоката онлайн,
+									задав
+									вопросы по бесплатному номеру телефона или сформулировав проблему в виде
+									письменного запроса</span></li>
+							<li class="problem__list-item"><span class="problem__list-link">узнать о новых изменениях в
+									законодательстве
+									и уточнить действенность ранее существовавших законодательных норм</span></li>
+							<li class="problem__list-item"><span class="problem__list-link">сохранить полную конфиденциальность
+									заданных
+									вопросов и ответов, так как мы не просим документов, удостоверяющих
+									личность</span></li>
+							<li class="problem__list-item"><span class="problem__list-link">увидеть свою ситуацию с точки зрения
+									действующих норм и судебной практики и оценить перспективы решения проблемы.</span></li>
+
+						</ul>
+
+						<div class="box-text">
+							<p>Предлагаем бесплатную помощь адвоката всем, кто нуждается в срочных квалифицированных ответах по
+								возникшим случаям.
+							</p>
+						</div>
+					</div>
+
+					<div class="instruction-complaint">
+						<p>Как правильно написать жалобу? Как пожаловаться так, что бы она была побыстрее рассмотрена, а не
+							затерялась
+							в
+							бюрократических коридорах власти? Как составить и оформить жалобу так, чтобы на нее был получен ответ и
+							было
+							принято
+							необходимое вам решение? На нашем сайте можно просмотреть грамотно составленные образцы жалоб граждан на
+							все
+							случаи
+							жизни.</p>
+					</div>
+
+					<div class="offer-box">
+						<h5 class="text-uppercase">Здесь вы найдете:</h5>
+						<ul class="problem__list">
+							<li class="problem__list-item"><span class="problem__list-link">Статьи, разъясняющие различные ситуации с
+									юридической точки зрения</span></li>
+							<li class="problem__list-item"><span class="problem__list-link">Пошаговые инструкции по насущным
+									вопросам</span></li>
+							<li class="problem__list-item"><span class="problem__list-link">Словарь юридических терминов</span></li>
+							<li class="problem__list-item"><span class="problem__list-link">Шаблоны часто используемых
+									документов</span></li>
+							<li class="problem__list-item"><span class="problem__list-link">Справочник адресов необходимых служб и
+									организаций</span></li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--<?php require_once('footer.php'); ?>-->
+
+	<footer>
+		<div class="footer">
+			<div class="footer__inner">
+				<div class="container">
+					<div class="footer__row">
+						<div class="footer__col">
+							<div class=" footer__logo">
+								<img src="uploads/logo.svg" alt="">
+							</div>
+							<div class="footer__description">
+								<span>Жалоба документ, содержащий требование (письменное) или обращение с целью устранить нарушение
+									законных прав и интересов прав и законных интересов. Жалоба является основным инструментом
+									гражданского общества при защите законных и интересов и основной способ восстановления нарушенных
+									прав.</span>
+							</div>
+						</div>
+						<div class="footer__col">
+							<h3 class="footer__title">Горячая линия</h3>
+							<a href="#" class="footer__tel">
+								<svg aria-hidden="true" class="footer__tel-icon">
+									<use xlink:href="svg.svg#icon-phone" />
+								</svg>
+								<span>8 800 800 88 88</span>
+							</a>
+
+							<a href="#" class="footer__email">
+								<svg aria-hidden="true" class="footer__email-icon">
+									<use xlink:href="svg.svg#icon-email" />
+								</svg>
+								<span>info@жфлоба24.рф</span>
+							</a>
+
+							<div class="footer__social">
+								<h3 class="footer__social-title">Мы в соцсетях</h3>
+								<ul class="footer__social-list">
+									<li class="footer__social-item">
+										<a class="footer__social-link" href="#">
+											<svg aria-hidden="true" class="footer__social-icon">
+												<use xlink:href="svg.svg#icon-fb" />
+											</svg>
+										</a>
+									</li>
+									<li class="footer__social-item">
+										<a class="footer__social-link" href="#">
+											<svg aria-hidden="true" class="footer__social-icon">
+												<use xlink:href="svg.svg#icon-instagram" />
+											</svg>
+										</a>
+									</li>
+									<li class="footer__social-item">
+										<a class="footer__social-link" href="#">
+											<svg aria-hidden="true" class="footer__social-icon">
+												<use xlink:href="svg.svg#icon-vk" />
+											</svg>
+										</a>
+									</li>
+									<li class="footer__social-item">
+										<a class="footer__social-link" href="#">
+											<svg aria-hidden="true" class="footer__social-icon">
+												<use xlink:href="svg.svg#icon-ok" />
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer__col">
+							<ul class="footer__menu">
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link">О портале</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link">Жалобы</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link">Информация</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link">Ответы на вопросы</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link">Пользовательское соглашение</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link">Политика конфиденциальности</a>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link">Карта сайта</a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyrights">
+			<span class="copyrights__text">Все права защищены. © 2014-
+				<?= date('Y'); ?>
+			</span>
+		</div>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>

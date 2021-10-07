@@ -1,0 +1,75 @@
+.main-title{
+    text-transform: uppercase;
+    display: block;
+    line-height: toRem(30);
+    position: relative;
+    z-index: 2;
+
+    padding-left: toRem(9);
+    padding-right: toRem(42);
+
+    @media (max-width: 992px){
+        &:before{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            top: toRem(-16);
+            right: 0;
+            left: 0;
+            transform: translateX(-10%);
+            background: url('../img/title-bg.svg') no-repeat center right;
+            background-size: cover;
+            z-index: -1;
+        }
+    }
+    @media (min-width: 992px){
+        line-height: toRem(36);
+        display: block;
+        padding-left: toRem(109);
+        padding-right: toRem(109);
+    }
+
+    &__primary{
+        display: inline-block;
+        position: relative;        
+        font-weight: $font-weight-normal;
+        
+        @media (min-width: 992px){
+            text-align: center;
+            background-color: $primary;
+            padding: toRem(12) toRem(72);
+            margin: 0 toRem(37) 0 toRem(-72);
+            line-height: 1em;
+        }
+        @media (min-width: 992px){
+            &:before,
+            &:after{
+                width: 0;
+                height: 0;
+                position: absolute;
+                content: "";
+                display: block;
+                z-index: 1;
+                top: 0;
+            }
+            &:before{
+                left: toRem(-37);
+                border-bottom: toRem(60) solid $primary;
+                border-left: toRem(37) solid transparent;
+            }
+            &:after{
+                right: toRem(-37);
+                border-top: toRem(60) solid $primary;
+                border-right: toRem(37) solid transparent;
+            }
+        }
+        strong{
+            font-weight: $font-weight-bold;
+        }
+    }
+    &__light{
+        font-weight: $font-weight-normal;
+    }
+}

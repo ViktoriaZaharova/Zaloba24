@@ -1,0 +1,90 @@
+// Required
+@import "../../node_modules/bootstrap/scss/functions";
+
+// Default variable overrides
+@import "functions";
+@import "variables";
+
+// @media (min-width: 576px){}
+// @media (min-width: 768px){}
+// @media (min-width: 992px){}
+// @media (min-width: 1200px){}
+// @media (min-width: 1400px){}
+
+
+// scss-docs-end theme-color-variables
+
+// Required
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/utilities";
+
+
+
+// Optional Bootstrap components here
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/tables";
+@import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/buttons";
+// @import "../../node_modules/bootstrap/scss/transitions";
+
+// @import "../../node_modules/bootstrap/scss/dropdown";
+// @import "../../node_modules/bootstrap/scss/button-group";
+// @import "../../node_modules/bootstrap/scss/nav";
+// @import "../../node_modules/bootstrap/scss/navbar";
+// @import "../../node_modules/bootstrap/scss/card";
+// @import "../../node_modules/bootstrap/scss/accordion";
+// @import "../../node_modules/bootstrap/scss/breadcrumb";
+// @import "../../node_modules/bootstrap/scss/pagination";
+// @import "../../node_modules/bootstrap/scss/badge";
+// @import "../../node_modules/bootstrap/scss/alert";
+// @import "../../node_modules/bootstrap/scss/progress";
+// @import "../../node_modules/bootstrap/scss/list-group";
+// @import "../../node_modules/bootstrap/scss/close";
+// @import "../../node_modules/bootstrap/scss/toasts";
+// @import "../../node_modules/bootstrap/scss/modal";
+// @import "../../node_modules/bootstrap/scss/tooltip";
+// @import "../../node_modules/bootstrap/scss/popover";
+// @import "../../node_modules/bootstrap/scss/carousel";
+// @import "../../node_modules/bootstrap/scss/spinners";
+// @import "../../node_modules/bootstrap/scss/offcanvas";
+// @import "../../node_modules/bootstrap/scss/placeholders";
+// etc
+
+@import "root";
+@import "navbar";
+@import "nav";
+@import "header-search";
+@import "social";
+@import "main-banner";
+@import "home-search";
+@import "main-title"; // Заголовок для всех страниц
+@import "problem-tab";
+@import "problem";
+@import "how-it-works";
+@import "what-get";
+@import "advantage";
+@import "help";
+@import "sidebar";
+
+@import "category";
+@import "complaint";
+@import "command";
+@import "about";
+
+@import "footer";
+@import "copyrights";
+
+
+
+
+// Helpers
+@import "../../node_modules/bootstrap/scss/helpers";
+
+// Utilities
+@import "../../node_modules/bootstrap/scss/utilities/api";

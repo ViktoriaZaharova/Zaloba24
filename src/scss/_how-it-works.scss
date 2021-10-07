@@ -1,0 +1,201 @@
+.how-it-works{
+    &__wrapper{
+        background-color: $gray-200;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    &__container{
+        position: relative;
+        z-index: 10;
+        @media (min-width: 992px){
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    // xs: 0,
+    //   sm: 576px,
+    //   md: 768px,
+    //   lg: 992px,
+    //   xl: 1200px,
+    //   xxl: 1400px
+
+    // sm: 540px,
+    //   md: 720px,
+    //   lg: 960px,
+    //   xl: 1140px,
+    //   xxl: 1320px
+    &__left{
+        position: relative;
+        z-index: 20;
+        &-content{
+            
+            padding: $grid-gutter-width*2 $grid-gutter-width 0;
+            
+            @media (min-width: 768px){
+                width: map-get($container-max-widths, "md") * 8 / 12;
+                margin: 0 auto;
+            }
+            @media (min-width: 992px){
+                // padding: 39px $grid-gutter-width/2 $grid-gutter-width/2 0px;
+                width: map-get($container-max-widths, "lg") * 5 / 12;
+                margin-left: auto;
+            }
+            
+            @media (min-width: 1200px){
+                padding: 39px 15px 20px 73px;
+                width: map-get($container-max-widths, "xl") * 5 / 12;
+            }
+
+            @media (min-width: 1400px){
+                width: map-get($container-max-widths, "xxl") * 4 / 12;
+            }
+        }
+        @media (min-width: 992px){
+            width: 45%;
+        }
+        @media (min-width: 1200px){
+            width: 40.5%;
+        }
+    }
+    &__right{
+        position: relative;
+        z-index: 10;
+        // border: 1px solid green;
+        &-content{
+            margin-right: auto;
+            padding: $grid-gutter-width*2 $grid-gutter-width $grid-gutter-width*2;
+            color: $white;
+            position: relative;
+            z-index: 10;
+            @media (min-width: 992px){
+                padding: toRem(168) toRem(20) toRem(20);
+                width: map-get($container-max-widths, "lg") * 7 / 12;
+            }
+            
+            @media (min-width: 1200px){
+                padding: toRem(168) toRem(121) toRem(20) toRem(40);
+                width: map-get($container-max-widths, "xxl") * 7 / 12;
+            }
+
+            @media (min-width: 1400px){
+                width: map-get($container-max-widths, "xxl") * 8 / 12;
+            }
+        }
+        @media (min-width: 992px){
+            width: 55%;
+        }
+        @media (min-width: 1200px){
+            width: 59.5%;
+        }
+    }
+    &__bg{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../img/how-it-works-bg.jpg") top left no-repeat;
+        background-size: cover;
+        z-index: 1;
+        &:before{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #000;
+            opacity: 0.7;
+            z-index: 2;
+        }
+    }
+
+    &__title{
+        font-size: toRem(32);
+        text-transform: uppercase;
+        display: inline-block;
+        width: toRem(286);
+        padding-left: toRem(20);
+        margin-bottom: toRem(77);
+        
+        position: relative;
+        &:before{
+            position: absolute;
+            display: block;
+            content: "";
+            top: toRem(97);
+            left: 0;
+            width: 100vw;
+            background: $yellow;
+            height: toRem(2);
+        }
+
+        @media (min-width: 576px){
+            
+            width: toRem(286);
+        }
+    }
+
+    &__list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__item{
+        font-size: toRem(16);
+        display: block;
+        // height: 73px;
+        margin-bottom: toRem(50);
+        padding-left: toRem(123);
+
+        position: relative;
+        &:before{
+            content: "1";
+            position: absolute;
+            left: toRem(67);
+            bottom: toRem(-6);
+            font-size: toRem(60);
+            font-weight: $font-weight-bold;
+            line-height: 1em;
+            z-index: 2;
+        }
+        &:nth-child(1):before{ content: "1"; }
+        &:nth-child(2):before{ content: "2"; }
+        &:nth-child(3):before{ content: "3"; }
+        &:nth-child(4):before{ content: "4"; }
+        
+        &:after{
+            content: "";
+            position: absolute;
+            width: toRem(69);
+            height: toRem(69);
+            display: block;
+            background: $yellow;    
+            transform: skewX(-16deg);
+            bottom: toRem(4);
+            left: toRem(12);
+            z-index: 1;
+        }
+
+        span{
+            font-size: toRem(24);
+            display: block;
+            font-weight: $font-weight-bold;
+            line-height: 1em;
+        }
+
+    }
+
+    &__text{
+        line-height: 1.5em;
+        h2{
+            color: $yellow;
+            font-size: toRem(18);
+            text-transform: uppercase;
+            margin: toRem(28) 0 toRem(16);
+        }
+    }
+}

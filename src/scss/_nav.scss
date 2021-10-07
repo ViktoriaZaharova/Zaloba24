@@ -1,0 +1,197 @@
+.nav{
+    list-style: none;
+    display: inline-flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    @media (min-width: 992px){
+        flex-direction: row;
+        display: flex;
+        margin-right: toRem(10);
+    }
+
+    @media (min-width: 1200px){
+        margin-right: toRem(37);
+    }
+    &__item{
+        width: auto;
+    }
+    &__dropdown{
+        color: $white;        
+        display: inline-flex;
+        align-items: center;        
+        position: absolute;
+        top: 0;
+        right: toRem(6);
+        height: 100%;
+        transform: rotate(0deg);
+        transition: ease all .3s;
+        .is-active &{
+            color: $primary;
+            transform: rotate(180deg);
+        }
+        
+    }
+    &__dropdown-icon{
+        width: toRem(14);
+        height: toRem(14);
+    }
+    &__link{
+        text-decoration: none;
+        font-size: toRem(18);
+        padding: toRem(22) toRem(25) toRem(22) toRem(0);
+        display: block;
+        line-height: toRem(18);
+        position: relative;
+        color: $white;
+        transition: ease all .3s;
+        &:after{
+            content: "";
+            display: block;
+            width: toRem(60);
+            height: 4px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%) scale(0);
+            background-color: $primary;
+            opacity: 0;
+
+            transition: ease all .3s;
+        }
+
+        .is-active &,
+        &:hover,
+        &.active{
+            color: $primary;
+        }
+        .is-active &:after
+        &.active:after,
+        &:hover:after{
+            opacity: 1;
+            transform: translateX(-50%) scale(1);
+        }
+        
+        &.active{
+            font-weight: bold;
+        }
+        
+        @media (min-width: 1200px){
+            padding: toRem(22) toRem(25);
+        }
+    }
+
+    /* Submenu */
+    &__sub{
+        
+        overflow: hidden;
+        width: 100%;
+        color: $white;
+        background-color: $gray-900;
+        box-shadow: 0px 7px 17px 0px rgba($gray-900, 0.2);
+        transition: ease all .3s;
+        
+        @media (max-width: 992px){
+            height: 0;
+            &.is-active{
+                height: auto;
+            }
+        }
+        @media (min-width: 992px){
+            position: absolute;
+            z-index: -1;
+            top: toRem(62); // navbar Height
+            left: 0;
+            transform: translateY(-200%);
+            opacity: 0;
+            
+            &.is-active{
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        &-wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: stretch;            
+            @media (min-width: 992px){
+                padding: toRem(20) 0 toRem(40);
+            }
+        }
+        &-item{
+            width: 100%;
+            padding: toRem(20) 0;
+            position: relative;
+
+            @media (min-width: 568px){
+                width: 50%;
+                padding: toRem(20);
+            }
+            @media (min-width: 992px){
+                width: 33.3333%;
+            }
+            @media (min-width: 1200px){
+                width: 25%;
+            }
+        }
+        &-head{
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: toRem(4);
+        }
+        &-title{
+            padding-top: toRem(4);
+            padding-left: toRem(5);
+            font-size: toRem(18);
+            font-weight: $font-weight-bold;
+        }
+        &-icon{
+            svg{
+                color: $primary;
+                width: toRem(29);
+                height: toRem(29);
+                fill: $primary;
+            }
+        }
+
+        &-list{
+            list-style: none;
+            padding: 0;
+            margin: 0 0 toRem(11);
+        }
+
+        &-list-link{
+            padding-left: toRem(34);
+            display: inline-block;
+            background-image: url('../img/list-icon.svg');
+            background-repeat: no-repeat;
+            background-position: toRem(8) toRem(9);
+            color: $white;
+            transition: ease all .3s;
+            &:hover{
+                color: $primary;
+            }
+        }
+
+        &-link{
+            display: block;
+            // position: absolute;
+            // bottom: toRem(20);
+            // left: 0;
+            width: 100%;
+            text-align: center;
+            color: $white;
+            font-size: toRem(14);
+            font-style: italic;
+
+            transition: ease all .3s;
+
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+    /* End Submenu */
+}

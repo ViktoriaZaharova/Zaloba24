@@ -1,0 +1,132 @@
+.footer{
+    &__inner{
+        padding: toRem(40) 0 toRem(39);
+        background-color: $gray-900;
+        color: $white;
+        border-top: 5px solid $white;
+    }
+    &__logo{
+        margin-bottom: toRem(38);
+        max-width: toRem(308);
+        margin: 0 auto toRem(38);
+    }
+    &__description{
+        line-height: toRem(20);
+    }
+
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @media (min-width: 992px){
+            justify-content: space-between;
+        }
+    }
+    &__col{
+        flex: 0 0 auto;
+        width: 100%;
+        text-align: center;
+        @media (min-width: 576px){
+            width: toRem(365);
+        }
+        @media (min-width: 768px){
+            width: 50%;
+        }
+        @media (min-width: 992px){
+            text-align: left;
+            width: 30%;
+        }
+        @media (min-width: 1200px){
+            width: toRem(365);
+        }
+    }
+    
+    &__title{
+        margin-top: toRem(39);
+        margin-bottom: toRem(27);
+        text-transform: uppercase;
+        font-size: toRem(30);
+    }
+    &__tel,
+    &__email{
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+        color: $white;
+        align-items: center;
+        justify-content: center;
+        transition: ease all  .3s;
+        &:hover{
+            color: $primary;
+        }
+
+        &-icon{
+            color: $primary;
+            width: toRem(23);
+            height: toRem(23);
+            margin-right: toRem(18);
+        }
+        @media (min-width: 992px){
+            justify-content: flex-start;
+        }
+    }
+    &__tel{
+        font-size: toRem(30);
+        margin-bottom: toRem(20);
+    }
+    &__email{
+        font-size: toRem(18);
+        margin-bottom: toRem(36);
+    }
+
+
+    /*  Social */
+    &__social-title{
+        font-size: toRem(18);
+        margin-bottom: toRem(17);
+    }
+    &__social-list{
+        list-style: none;
+        margin: 0 toRem(-9);
+        padding: 0;
+    }
+    &__social-item{
+        display: inline-block;
+        padding: 0 toRem(9);
+    }
+    &__social-link{
+        display: inline-flex;
+        background-color: transparent;
+        width: toRem(28);
+        height: toRem(28);   
+        align-items: center;
+        justify-content: center;
+        border-radius: toRem(10);
+        color: $white;
+        transition: ease all  .3s;
+        &:hover{
+            background-color: $black;
+            color: $primary;
+        }   
+    }
+    &__social-icon{
+        width: toRem(18);
+        height: toRem(18);        
+    }
+
+    /* Footer Menu */
+    &__menu{
+        list-style: none;
+        margin: toRem(45) 0 0;
+        padding: 0;
+    }
+    &__menu-link{
+        color: $white;
+        transition: ease all  .3s;
+        font-size: toRem(18);
+        line-height: toRem(36);
+        &:hover{
+            color: $primary;
+        }
+    }
+}

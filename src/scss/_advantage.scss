@@ -1,0 +1,28 @@
+.advantage{
+    &__wrapper{
+        padding: $grid-gutter-width * 2 0;
+    }
+    &__item{
+        &-head{
+            background: $gray-200;
+            padding: $grid-gutter-width 0 $grid-gutter-width;
+            text-align: center;
+        }
+        &-icon{
+            svg, img{
+                height: toRem(68);
+            }
+            margin-bottom: toRem(15);
+        }
+        &-title{
+            font-size: toRem(24);
+            text-transform: uppercase;
+            line-height: 1em;
+        }
+        &-content{
+            text-align: center;
+            font-size: toRem(16);
+            padding: $grid-gutter-width;
+        }
+    }
+}

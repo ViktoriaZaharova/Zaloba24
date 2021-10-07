@@ -1,0 +1,139 @@
+.help{
+    &__wrapper{
+        background: $gray-900 url("../img/help-bg-mobile.png") 50% -22vw no-repeat;
+        background-size: cover;
+        border-bottom: toRem(5) solid $white;
+        overflow: hidden;
+        color: $white;
+
+        @media (min-width: 768px){
+            background-position: 16% 50%;
+            background-size: contain;
+            background-image: url("../img/help-bg.png");
+        }
+    }
+
+    &__row{
+        @media (min-width: 768px){
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;     
+        }   
+    }
+    &__left{
+        
+        padding: toRem(30) toRem(57);
+        text-align: center;
+
+        @media (min-width: 768px){
+            text-align: left;
+            width: 54%;
+        }
+        @media (min-width: 992px){
+            padding: toRem(22) toRem(55) toRem(36) toRem(100);
+        }
+    }
+    &__right{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 10;
+        
+        width: 100%;
+
+        padding: toRem(100) 0 toRem(43);
+        text-align: center;
+        @media (min-width: 768px){
+            width: 46%;
+            padding: 0 toRem(40);
+        }
+        
+        @media (min-width: 992px){
+            padding: 0 toRem(33);
+            justify-content: left;
+        }
+
+        &:before,
+        &:after{
+            display: block;
+            content: "";
+            position: absolute;
+            background-color: $yellow;
+            z-index: 1;
+            
+            width: 100vw;
+            height: 100vh;
+
+            top: toRem(40);
+            @media (min-width: 768px){
+                height: 100%;
+            }
+        }
+        &:before{ left: $grid-gutter-width * -2; transform: skewY(32deg);}
+        &:after{ right: $grid-gutter-width * -2; transform: skewY(-32deg);}
+
+        @media (min-width: 576px){
+            &:before{ transform: skewY(14deg);}
+            &:after{ transform: skewY(-14deg);}
+        }
+        @media (min-width: 768px){
+            &:before,
+            &:after{
+                left: toRem(-70);
+                right: auto;
+            }
+            &:before{ top: -50%; transform: skewX(30deg);}
+            &:after{ top: 50%; transform: skewX(-30deg);}
+        }
+
+        @media (min-width: 992px){
+            &:before,
+            &:after{
+                left: toRem(-120);
+            }
+            &:before{ transform: skewX(44deg);}
+            &:after{ transform: skewX(-44deg);}
+        }
+    }
+
+    &__btn{
+        z-index: 2;
+        font-size: toRem(18);
+        text-transform: uppercase;
+    }
+
+
+    &__title{
+        font-weight: $font-weight-normal;
+        text-transform: uppercase;
+        font-size: toRem(28);
+        line-height: 1.28em;
+        border-bottom: toRem(2) solid $yellow;
+
+        padding-bottom: toRem(23);
+        margin-bottom: toRem(16);
+
+        @media (min-width: 768px){
+            padding-bottom: toRem(14);
+            margin-bottom: toRem(20);
+        }
+
+        span{
+            @media (min-width: 992px){
+                display: inline-block;
+                max-width: toRem(360);
+            }
+        }
+    }
+    &__sub-title{
+        font-weight: $font-weight-normal;
+        font-size: toRem(26);
+        line-height: 1.3em;
+        margin-bottom: 0;
+        @media (min-width: 992px){
+            padding-left: toRem(65);
+        }
+    }
+}

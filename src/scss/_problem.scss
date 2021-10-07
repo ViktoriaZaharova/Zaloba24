@@ -1,0 +1,167 @@
+.problem {
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    @media (min-width: 992px) {
+      padding: toRem(20) 0 toRem(40);
+    }
+  }
+
+  &__item {
+    width: calc(100% - #{toRem(20)});
+    padding: toRem(42) toRem(28) toRem(22); // +4px на обводку
+    position: relative;
+    border: 2px solid $black;
+    margin: toRem(10) toRem(10) toRem(30);
+
+    @media (min-width: 568px) {
+      width: calc(50% - #{toRem(20)});
+    }
+    @media (min-width: 992px) {
+      width: calc(33.3333% - #{toRem(20)});
+    }
+
+    &:hover {
+      border: 4px solid $primary;
+      padding: toRem(40) toRem(26) toRem(20);
+    }
+
+    // @media (min-width: 1200px){
+    //     width: calc(25% - #{toRem(20)});
+    // }
+    &.hide {
+      display: none;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: toRem(20);
+    font-weight: $font-weight-bold;
+    position: relative;
+    margin-bottom: toRem(6);
+  }
+
+  &__icon {
+    position: absolute;
+    top: toRem(-40);
+    left: toRem(42);
+    width: toRem(80);
+    height: toRem(80);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: toRem(20);
+      position: absolute;
+      z-index: 1;
+      background: $white;
+    }
+
+    svg {
+      position: relative;
+      z-index: 2;
+      color: $black;
+      width: toRem(70);
+      height: toRem(70);
+      fill: $black;
+    }
+
+    img {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &__info {
+    &-icon {
+      position: absolute;
+      top: toRem(16);
+      right: toRem(16);
+      width: toRem(24);
+      height: toRem(24);
+      color: $gray-400;
+      transition: ease color .3s;
+      cursor: pointer;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  // FIX border line
+  &__item:hover {
+    .problem__info-icon {
+      top: toRem(14);
+      right: toRem(14);
+    }
+
+    .problem__icon {
+      top: toRem(-42);
+      left: toRem(40);
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 toRem(11);
+  }
+
+  &__list-link {
+    padding-left: toRem(24);
+    display: inline-block;
+    background-image: url('../img/list-icon.svg');
+    background-repeat: no-repeat;
+    background-position: toRem(0) toRem(9);
+    color: $black;
+    transition: ease all .3s;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  &__link {
+    display: block;
+    // position: absolute;
+    // bottom: toRem(20);
+    // left: 0;
+    width: 100%;
+    text-align: center;
+    color: $black;
+    font-size: toRem(14);
+    font-style: italic;
+
+    transition: ease all .3s;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  &__footer {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__more,
+  &__all {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  &__more {
+    color: $blue;
+    margin-bottom: toRem(42);
+  }
+}

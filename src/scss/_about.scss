@@ -1,0 +1,110 @@
+.main-about {
+	.main-banner__description {
+		margin: 30px auto;
+	}
+
+	.main-command-box {
+		margin: 0 45px 37px;
+		text-transform: none;
+		max-width: none;
+		width: fit-content;
+
+		span {
+			max-width: 267px;
+			width: fit-content;
+		}
+	}
+
+	.main-command-list {
+		text-transform: none;
+	}
+
+	.main-command-wrapper {
+		justify-content: center;
+	}
+
+	@media (min-width: 992px) {
+		padding: 118px 0 30px;
+
+		.main-banner__description {
+			margin: 40px auto;
+		}
+	}
+}
+
+.about-menu {
+	width: 100%;
+	background: #BDBDBD;
+	padding: 0;
+	list-style: none;
+	margin: 0;
+	font-size: 16px;
+
+	li {
+		a {
+			display: flex;
+			align-items: center;
+			transition: .3s ease;
+			height: 57px;
+			color: #000000;
+			padding: 11px 16px 11px 20px;
+			text-decoration: none;
+			position: relative;
+
+			&:hover {
+				background: #FFCB05;
+				font-weight: bold;
+			}
+
+			&::after {
+				content: '\f054';
+				margin: 0 0 0 auto;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-family: "Font Awesome 5 Brands",
+					"Font Awesome 5 Free";
+				-webkit-font-smoothing: antialiased;
+			}
+		}
+	}
+}
+
+.about-menu__links-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 35px;
+	height: 35px;
+	min-width: 35px;
+}
+
+.about-menu__links-text {
+	padding: 0 0 0 23px;
+}
+
+.acquaintance-section {
+	padding: 46px 0 56px;
+	h2 {
+		margin: 0 0 30px 20px;
+	}
+	.box-text {
+		padding: 0 0 0 38px;
+		margin: 0 0 34px;
+	}
+}
+
+.whom-service {
+	background-color: #FFCB05;
+	background: linear-gradient(270.07deg, #FFCB05 58.9%, rgba(255, 203, 5, 0) 77.56%), url('../../uploads/whom-bg.png') no-repeat left bottom;
+	background-size: 100%;
+	padding: 31px 0 74px;
+	h2 {
+		margin: 0 0 40px;
+		max-width: 255px;
+		font-size: 26px;
+		&:after {
+background: #000;
+		}
+	}
+}

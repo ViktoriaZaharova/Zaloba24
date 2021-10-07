@@ -1,0 +1,176 @@
+.what-get{
+    &__wrapper{
+        overflow: hidden;
+        padding: 70px 0 0; // 27px смещение левой колонки
+        @media (min-width: 992px){
+            padding-bottom: 27px;
+        }
+    }
+
+    &__title{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: toRem(32);
+        line-height: 1em;
+        margin-bottom: 3px;
+
+        max-width: 850px;
+        margin: 0 auto;
+        position: relative;
+        &:before{
+            content: "";
+            width: 100%;
+            height: 85px;
+            border: 2px solid $gray-600;
+            border-bottom: none;
+            display: block;
+            top: 50%;
+            position: absolute;
+        }
+        span{
+            display: block;
+            text-align: center;
+            font-size: toRem(30);
+            margin-top: 23px;
+        }
+    }
+
+    &__content{
+        position: relative;
+        width: calc(100% - 80px);
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        @media (min-width: 992px){
+            width: 340px;
+        }
+        @media (max-width: 992px){
+            margin-left: auto;
+        }
+        &.light{ 
+            color: $black; 
+            @media (min-width: 992px){
+                margin-left: auto;
+            }
+            a{
+                color: $blue;   
+            }
+            
+        }
+        &.dark{ 
+            color: $white; 
+            @media (min-width: 992px){
+                margin-right: auto;
+            }
+        }
+        h3{
+            font-size: toRem(24);
+            text-transform: uppercase;
+            display: inline-block;
+            float: left;            
+        }
+        p{
+            font-size: toRem(15);
+            margin-bottom: 26px;
+            @media (min-width: 992px){
+                font-size: toRem(16);
+            }
+        }
+        a{
+            font-size: toRem(16);
+            font-style: italic;
+
+        }
+    }
+    &__content-title{
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__left{
+        position: relative;
+        @media (min-width: 992px){
+            padding-right: 66px;
+            top: 27px;
+        }
+        &:before{
+            content: "";
+            position: absolute;
+            right: -1 * $container-padding-x;
+            top: 0;
+            width: 100vw;
+            height: 100%;
+            background-color: $yellow;
+            z-index: -1;
+            @media (min-width: 768px){
+                width: 120vw;
+                right: calc((100vw - #{map-get($container-max-widths, "md")}) * -1);
+            }
+            @media (min-width: 992px){
+                right: 30px;
+                transform: skewX(-33deg);
+            }
+        }
+    }
+    &__right{
+        position: relative;
+        @media (min-width: 992px){
+            padding-left: 145px;
+        }
+        &:before{
+            content: "";
+            position: absolute;
+            left: -1 * $container-padding-x;
+            top: 0;
+            width: 100vw;
+            height: 100%;
+            background-color: $black;
+            z-index: -1;
+            @media (min-width: 768px){
+                width: 120vw;
+                left: calc((100vw - #{map-get($container-max-widths, "md")}) * -1);
+            }
+            @media (min-width: 992px){
+                left: -15px;
+                transform: skewX(-33deg);
+            }
+        }
+    }
+
+    &__icon{
+        position: absolute;
+        top: 50px;
+        left: -80px; // 30 + 50
+        svg{
+            width: 50px;
+            height: 60px;
+        }
+    }
+
+    &__link{
+        text-decoration: none;
+        span{
+            text-decoration: underline;
+        }
+    }
+
+    &__link-icon{
+        width: 24px;
+        height: 24px;
+    }
+
+    &__user{
+        display: inline-block;
+        float: right;
+        font-size: toRem(14);
+        &-icon{
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+    }
+
+    &__left &__user{
+        right: -40px;
+    }
+}
