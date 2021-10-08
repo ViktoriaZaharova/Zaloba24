@@ -99,7 +99,10 @@
 	background: #F2F2F2 url('../../uploads/idea-bg.png') no-repeat center bottom;
 	background-size: cover;
 	padding: 45px 0 54px;
-
+	h2 {
+		font-size: 26px;
+		max-width: 255px;
+	}
 	.problem__list {
 		pointer-events: none;
 		max-width: 1084px;
@@ -161,6 +164,7 @@
 		margin: 0 auto 60px;
 		display: block;
 		width: fit-content;
+		font-size: 26px;
 	}
 }
 

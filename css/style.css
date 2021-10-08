@@ -5954,6 +5954,9 @@ header {
 .offer {
   padding: 50px 0 62px;
 }
+.offer h2, .offer .h2 {
+  font-size: 26px;
+}
 
 .mb-40 {
   margin-bottom: 40px;
@@ -6008,12 +6011,12 @@ header {
   top: 0;
   left: 50%;
   background-color: #FFCB05;
-  -webkit-transform: skewX(-20deg) translateX(-50%);
-          transform: skewX(-20deg) translateX(-50%);
+  -webkit-transform: skewX(-25deg) translateX(-50%);
+          transform: skewX(-25deg) translateX(-50%);
 }
 @media (min-width: 992px) {
   .instruction-complaint {
-    padding: 37px 80px 34px;
+    padding: 37px 0 34px;
   }
   .instruction-complaint::before {
     width: calc(100% + 160px);
@@ -6889,6 +6892,10 @@ header {
   background-size: cover;
   padding: 45px 0 54px;
 }
+.idea-section h2, .idea-section .h2 {
+  font-size: 26px;
+  max-width: 255px;
+}
 .idea-section .problem__list {
   pointer-events: none;
   max-width: 1084px;
@@ -6946,6 +6953,7 @@ header {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  font-size: 26px;
 }
 
 .command-wrapper {
@@ -7161,7 +7169,7 @@ header {
   margin: 0;
   font-size: 16px;
 }
-.about-menu li a {
+.about-menu li > a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7176,11 +7184,11 @@ header {
   text-decoration: none;
   position: relative;
 }
-.about-menu li a:hover {
+.about-menu li > a:hover {
   background: #FFCB05;
   font-weight: bold;
 }
-.about-menu li a::after {
+.about-menu li > a::after {
   content: "";
   margin: 0 0 0 auto;
   display: -webkit-box;
@@ -7220,6 +7228,7 @@ header {
 }
 .acquaintance-section h2, .acquaintance-section .h2 {
   margin: 0 0 30px 20px;
+  font-size: 26px;
 }
 .acquaintance-section .box-text {
   padding: 0 0 0 38px;
@@ -7229,7 +7238,7 @@ header {
 .whom-service {
   background-color: #FFCB05;
   background: linear-gradient(270.07deg, #FFCB05 58.9%, rgba(255, 203, 5, 0) 77.56%), url("../../uploads/whom-bg.png") no-repeat left bottom;
-  background-size: 100%;
+  background-size: cover;
   padding: 31px 0 74px;
 }
 .whom-service h2, .whom-service .h2 {
@@ -7241,6 +7250,341 @@ header {
   background: #000;
 }
 
+.how-to-use {
+  padding: 65px 0 48px;
+}
+.how-to-use h2, .how-to-use .h2 {
+  margin: 0 0 30px;
+  font-size: 26px;
+}
+
+.how-to-use-box {
+  padding: 42px 0;
+}
+.how-to-use-box__img {
+  max-width: 322px;
+  height: 196px;
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+.how-to-use-box__body .how-it-works__item:before {
+  display: none;
+}
+.how-to-use-box .how-it-works__item {
+  margin: 0 0 19px;
+}
+.how-to-use-box .how-it-works__item .box-text {
+  max-width: 368px;
+  width: 100%;
+}
+
+.how-it-works__item-num {
+  position: absolute;
+  left: 4.1875rem;
+  bottom: -0.375rem;
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 1em;
+  z-index: 2;
+}
+
+.price-services {
+  position: relative;
+  overflow: hidden;
+}
+
+.price-services__body {
+  position: relative;
+  z-index: 1;
+  padding: 43px 0 58px 30px;
+  height: 100%;
+}
+.price-services__body::before {
+  content: "";
+  position: absolute;
+  right: -7px;
+  top: 0;
+  background: #FFCB05;
+  height: 100%;
+  width: 1700px;
+  -webkit-transform: skewX(-20deg);
+          transform: skewX(-20deg);
+  z-index: -1;
+}
+.price-services__body .problem-tab__title {
+  margin: 0 0 26px;
+  max-width: 270px;
+  font-size: 26px;
+}
+.price-services__body .problem-tab__title::after {
+  background: #000;
+}
+.price-services__body .box-text {
+  max-width: 254px;
+  width: 100%;
+  padding: 0 0 0 10px;
+}
+.price-services__body .price-instruction__val {
+  margin: 30px 0 0 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  font-size: 36px;
+}
+.price-services__body .price-instruction__val::before {
+  background: #000;
+  -webkit-transform: skewX(-20deg);
+          transform: skewX(-20deg);
+}
+
+.price-services__content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  padding: 48px 0 52px 60px;
+  color: #fff;
+}
+.price-services__content .box-text {
+  color: #fff;
+  max-width: 350px;
+  width: 100%;
+  margin: 0 0 20px;
+}
+.price-services__content .pdf-link {
+  color: #FFCB05;
+  margin: 0 0 24px;
+}
+.price-services__content .pdf-link:last-child {
+  margin: 0;
+}
+.price-services__content .svg-icon {
+  fill: #FFCB05;
+}
+.price-services__content:before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 0;
+  width: 1700px;
+  height: 100%;
+  z-index: -1;
+  -webkit-transform: skewX(-20deg);
+          transform: skewX(-20deg);
+  background: #000;
+}
+
+.payment-variable {
+  padding: 66px 0 52px;
+}
+.payment-variable h2, .payment-variable .h2 {
+  display: block;
+  margin: 0 auto 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 26px;
+}
+
+.payment-variable-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.payment-variable-box {
+  width: 50%;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  border-bottom: 1px solid #BDBDBD;
+  border-right: 1px solid #BDBDBD;
+}
+.payment-variable-box:nth-child(even) {
+  border-right: none;
+}
+.payment-variable-box:last-child, .payment-variable-box:nth-last-child(2) {
+  border-bottom: none;
+}
+.payment-variable-box__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto 10px;
+  height: 101px;
+}
+.payment-variable-box__icon img {
+  max-height: 100%;
+}
+
+.question-section {
+  background: #F2F2F2 url("../../uploads/question-bg.png") no-repeat center;
+  background-size: cover;
+  padding: 57px 0 44px;
+}
+.question-section h2, .question-section .h2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 48px;
+  display: block;
+  font-size: 26px;
+}
+.question-section .about-menu {
+  background: transparent;
+  border: none;
+}
+.question-section .about-menu li {
+  margin: 0;
+  border: none;
+}
+.question-section .about-menu li a::after {
+  display: none;
+}
+.question-section .about-menu .panel_heading.in .block_title {
+  font-weight: bold;
+  text-align: left;
+  line-height: normal;
+}
+.question-section .about-menu .panel_heading.in .block_title::after {
+  content: "";
+  width: 28px;
+  height: 9px;
+  background: url("../../uploads//arrow-select.svg") no-repeat center;
+  background-size: contain;
+  color: #000000;
+  display: inline-block;
+  margin: 0 0 0 10px;
+}
+.question-section .about-menu .block_title {
+  padding: 11px 15px 11px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: normal;
+}
+.question-section .about-menu .block_hover {
+  background: #FFCB05;
+  padding: 28px 32px;
+}
+.question-section .btn {
+  margin: 29px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.question-section__footer {
+  padding: 28px 0 0;
+  border-top: 2px solid #828282;
+  text-align: center;
+}
+.question-section__footer p {
+  margin: 0 auto 15px;
+}
+.question-section__footer p:last-child {
+  margin: 0;
+}
+
+.btn-black {
+  color: #fff;
+  background: #000;
+}
+.btn-black:hover {
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .acquaintance-section .box-text {
+    padding: 0;
+  }
+}
+@media (max-width: 992px) {
+  .how-to-use-box__img {
+    margin: 30px auto 0;
+  }
+}
+@media (max-width: 768px) {
+  .about-menu {
+    margin: 30px 0 0;
+  }
+
+  .price-services__body::before,
+.price-services__content:before {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    right: auto;
+    left: 5px;
+  }
+
+  .price-services__content,
+.price-services__body {
+    padding: 30px 0;
+  }
+
+  .payment-variable-box__icon {
+    height: 60px;
+  }
+}
+@media (max-width: 576px) {
+  .payment-variable-box {
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+    border-right: none;
+  }
+  .payment-variable-box:nth-last-child(2) {
+    border-bottom: 1px solid #BDBDBD;
+  }
+}
 .footer {
   /*  Social */
   /* Footer Menu */
