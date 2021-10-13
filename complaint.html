@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
 		integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/scripts.js"></script>
 
@@ -285,7 +286,7 @@
 								<span>ВЫБЕРИТЕ</span> жалобу или проблему
 							</div>
 						</li>
-						<li class="how-it-works__item">
+						<li class="how-it-works__item how-it-works__item-active">
 							<div class="how-it-works__item-check-body">
 								<span>ЗАПОЛНИТЕ</span> форму жалобы
 							</div>
@@ -306,79 +307,6 @@
 	<section class="category-section complaint-section">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-lg-4 order-lg-1">
-					<div class="category-section__sidebar">
-						<div class="complaint-result">
-							<h3>Заполнив форму жалобы <br>и оплатив заявку вы получите</h3>
-
-							<div class="complaint-result-box">
-								<div class="complaint-result-box__icon">
-									<svg class="svg-icon">
-										<use xlink:href="uploads/sprite.svg#instruction-icon"></use>
-									</svg>
-								</div>
-								<div class="complaint-result-box__body">
-									<h4>Инструкцию</h4>
-									<p>Подробную пошаговую инструкцию что необходимо сделать и куда необходимо направить жалобу что бы
-										исправить ситуацию</p>
-									<a href="#" class="pdf-link">
-										<svg class="svg-icon">
-											<use xlink:href="uploads/sprite.svg#pdf-icon"></use>
-										</svg>
-										<span>Скачать образец инструкции</span>
-									</a>
-								</div>
-							</div>
-
-							<div class="complaint-result-box">
-								<div class="complaint-result-box__icon">
-									<svg class="svg-icon">
-										<use xlink:href="uploads/sprite.svg#complaint-icon"></use>
-									</svg>
-								</div>
-								<div class="complaint-result-box__body">
-									<h4>жалобу</h4>
-									<p>Правильно оформленную жалобу которую необходимо направить в соответсвующий орган используя
-										прилагаемую инструкцию</p>
-									<a href="#" class="pdf-link">
-										<svg class="svg-icon">
-											<use xlink:href="uploads/sprite.svg#pdf-icon"></use>
-										</svg>
-										<span>Скачать образец инструкции</span>
-									</a>
-								</div>
-							</div>
-						</div>
-
-						<div class="price-instruction">
-							<p>Стоимость формирования <strong>Инструкции и Готовой жалобы</strong></p>
-							<div class="price-instruction__val">500 <i class="fas fa-ruble-sign rub-icon"></i></div>
-						</div>
-
-						<a href="#" class="btn btn-primary btn-instruction">КАК ПОЛЬЗОВАТЬСЯ СЕРВИСОМ</a>
-
-						<div class="video-box"><img src="img/video-img.jpg" alt=""></div>
-
-						<div class="question-box">
-							<div class="question-box__head">
-								<div class="question-box__icon">
-									<img src="uploads/icon-question.svg" alt="">
-								</div>
-								<h3>У Вас возник вопрос
-									по работе сервиса?</h3>
-							</div>
-
-							<div class="question-box__body">
-								<h4>Наш специалист БЕСПЛАТНО <br>проконсультирует.</h4>
-								<div class="box-text">
-									<p>Сейчас для вас работает 19 специалистов, <br>среднее время ответа 5 мин.</p>
-								</div>
-								<a href="#" class="btn btn-primary">КАК ПОЛЬЗОВАТЬСЯ СЕРВИСОМ</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
 				<div class="col-12 col-lg-8">
 					<form method="post" class="form">
 						<h3 class="form-title">ЖАЛОБА</h3>
@@ -498,10 +426,34 @@
 								</div>
 								<div class="col-12">
 									<ul class="list-check">
-										<li>Государственная жилищная инспекция</li>
-										<li>Министерство ЖКХ</li>
-										<li>Правительство</li>
-										<li>Прокуратура</li>
+										<li>
+											<label class="checkbox">
+												<input type="checkbox" class="inp-check" checked>
+												<div class="checkbox-custom"></div>
+												<div class="checkbox-text">Государственная жилищная инспекция</div>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox">
+												<input type="checkbox" class="inp-check" checked>
+												<div class="checkbox-custom"></div>
+												<div class="checkbox-text">Министерство ЖКХ</div>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox">
+												<input type="checkbox" class="inp-check" checked>
+												<div class="checkbox-custom"></div>
+												<div class="checkbox-text">Правительство</div>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox">
+												<input type="checkbox" class="inp-check" checked>
+												<div class="checkbox-custom"></div>
+												<div class="checkbox-text">Прокуратура</div>
+											</label>
+										</li>
 									</ul>
 								</div>
 							</div>
@@ -533,7 +485,7 @@
 							<div class="row">
 								<div class="col-12">
 									<div class="form-group">
-										<select class="form-control form-select" id="exampleFormControlSelect1">
+										<select class="form-control form-select js-example-basic-single" id="exampleFormControlSelect1">
 											<option>Полностью или частично отсутсвует горячая вода</option>
 											<option>Полностью или частично отсутсвует горячая вода</option>
 											<option>5</option>
@@ -579,30 +531,37 @@
 								</div>
 
 								<div class="col-12">
-									<div class="statement-item">
-										<p>На основании ФЗ «О порядке рассмотрения обращений граждан Российской Федерации», ФЗ «Об
-											образовании в Российской
-											Федерации» прошу:</p>
+									<div class="statement-item__wrapper">
+										<div class="statement-item">
+											<p>На основании ФЗ «О порядке рассмотрения обращений граждан Российской Федерации», ФЗ «Об
+												образовании в Российской
+												Федерации» прошу:</p>
 
-										<ul class="list-dots">
-											<li>провести проверку по указанным фактам и в случае выявления правонарушений, предусмотренных
-												законодательством Российской
-												Федерации, привлечь виновных лиц к ответственности;</li>
-											<li>провести проверку по указанным фактам и в случае выявления правонарушений, предусмотренных
-												законодательством Российской
-												Федерации, привлечь виновных лиц к ответственности;</li>
-											<li>провести проверку по указанным фактам и в случае выявления правонарушений, предусмотренных
-												законодательством Российской
-												Федерации, привлечь виновных лиц к ответственности;</li>
-										</ul>
+											<ul class="list-dots">
+												<li>провести проверку по указанным фактам и в случае выявления правонарушений, предусмотренных
+													законодательством Российской
+													Федерации, привлечь виновных лиц к ответственности;</li>
+												<li>провести проверку по указанным фактам и в случае выявления правонарушений, предусмотренных
+													законодательством Российской
+													Федерации, привлечь виновных лиц к ответственности;</li>
+												<li>провести проверку по указанным фактам и в случае выявления правонарушений, предусмотренных
+													законодательством Российской
+													Федерации, привлечь виновных лиц к ответственности;</li>
+											</ul>
+										</div>
+										<a href="#" class="links-text text-center text-decoration color-blue links-toggle-text">ПОЛНЫЙ ТЕКСТ
+											ЗАЯВЛЕНИЯ</a>
 									</div>
 
 									<div class="consent">
-										<a href="#" class="links-text text-center text-decoration color-blue">ПОЛНЫЙ ТЕКСТ ЗАЯВЛЕНИЯ</a>
+
 										<div class="box-text style-italic">
-											<p>Отправляя заявку, вы соглашаетесь, что ознакомлены с <a href="#" class="d-inline text-decoration color-blue font-bold">правилами</a> (договором-оферты) портала
+											<p>Отправляя заявку, вы соглашаетесь, что ознакомлены с <a href="#"
+													class="d-inline text-decoration color-blue font-bold">правилами</a> (договором-оферты) портала
 												(сервиса) «Жалоба24.рф» и
-												<a href="#" class="d-inline text-decoration font-bold color-blue">политикой конфиденциальности.</a></p>
+												<a href="#" class="d-inline text-decoration font-bold color-blue">политикой
+													конфиденциальности.</a>
+											</p>
 										</div>
 									</div>
 								</div>
@@ -612,6 +571,83 @@
 						<button type="submit" class="btn btn-primary btn-form">ПЕРЕЙТИ К ОПЛАТЕ</button>
 					</form>
 				</div>
+				<div class="col-12 col-lg-4">
+					<div class="category-section__sidebar">
+						<div class="complaint-result">
+							<h3>Заполнив форму жалобы <br>и оплатив заявку вы получите</h3>
+
+							<div class="complaint-result-box">
+								<div class="complaint-result-box__icon">
+									<svg class="svg-icon">
+										<use xlink:href="uploads/sprite.svg#instruction-icon"></use>
+									</svg>
+								</div>
+								<div class="complaint-result-box__body">
+									<h4>Инструкцию</h4>
+									<p>Подробную пошаговую инструкцию что необходимо сделать и куда необходимо направить жалобу что бы
+										исправить ситуацию</p>
+									<a href="#" class="pdf-link">
+										<svg class="svg-icon">
+											<use xlink:href="uploads/sprite.svg#pdf-icon"></use>
+										</svg>
+										<span>Скачать образец инструкции</span>
+									</a>
+								</div>
+							</div>
+
+							<div class="complaint-result-box">
+								<div class="complaint-result-box__icon">
+									<svg class="svg-icon">
+										<use xlink:href="uploads/sprite.svg#complaint-icon"></use>
+									</svg>
+								</div>
+								<div class="complaint-result-box__body">
+									<h4>жалобу</h4>
+									<p>Правильно оформленную жалобу которую необходимо направить в соответсвующий орган используя
+										прилагаемую инструкцию</p>
+									<a href="#" class="pdf-link">
+										<svg class="svg-icon">
+											<use xlink:href="uploads/sprite.svg#pdf-icon"></use>
+										</svg>
+										<span>Скачать образец инструкции</span>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="price-instruction">
+							<p>Стоимость формирования <strong>Инструкции и Готовой жалобы</strong></p>
+							<div class="price-instruction__val">500 <i class="fas fa-ruble-sign rub-icon"></i></div>
+						</div>
+
+						<a href="#" class="btn btn-primary btn-instruction">КАК ПОЛЬЗОВАТЬСЯ СЕРВИСОМ</a>
+
+						<div class="video-box">
+							<iframe src="https://www.youtube.com/embed/pEWEHSfNJTU" title="YouTube video player" frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+
+						<div class="question-box">
+							<div class="question-box__head">
+								<div class="question-box__icon">
+									<img src="uploads/icon-question.svg" alt="">
+								</div>
+								<h3>У Вас возник вопрос
+									по работе сервиса?</h3>
+							</div>
+
+							<div class="question-box__body">
+								<h4>Наш специалист БЕСПЛАТНО <br>проконсультирует.</h4>
+								<div class="box-text">
+									<p>Сейчас для вас работает 19 специалистов, <br>среднее время ответа 5 мин.</p>
+								</div>
+								<a href="#" class="btn btn-primary">КАК ПОЛЬЗОВАТЬСЯ СЕРВИСОМ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</section>
@@ -804,6 +840,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
 		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 	<script src="js/main.js"></script>
 
 </body>

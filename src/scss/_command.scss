@@ -253,6 +253,10 @@
 			color: #000;
 			margin: 0 0 0 3px;
 			text-decoration: none;
+			transition: .3s ease;
+			&:hover {
+				color: #FFCB05;
+			}
 		}
 	}
 }

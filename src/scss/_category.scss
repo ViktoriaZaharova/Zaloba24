@@ -62,6 +62,7 @@
 
 	.main-title__primary {
 		min-height: 60px;
+
 		@media (min-width: 992px) {
 			padding: 0.75rem 4rem;
 		}
@@ -105,6 +106,7 @@
 		width: 100%;
 		margin: 8px 0 11px;
 		display: block;
+
 		strong {
 			margin: 0 5px 0 0;
 		}
@@ -192,6 +194,7 @@
 
 	.problem__link {
 		color: #002F86;
+		margin: 0;
 	}
 
 	.problem__title {
@@ -207,6 +210,14 @@
 
 	.problem__list {
 		margin: 0 0 28px;
+	}
+
+	.problem__list-item {
+		display: block;
+	}
+
+	.problem__list-item.hide {
+		display: none;
 	}
 }
 
@@ -228,11 +239,20 @@
 
 	&:hover {
 		padding: 0;
+		top: -2px;
+		left: -2px;
+		margin-bottom: 40px;
 
 		.problem__icon {
 			top: -27px;
 			left: 38px;
 		}
+	}
+
+	&.in {
+		top: 0;
+		left: 0;
+		margin-bottom: 44px;
 	}
 
 	@media (min-width: 992px) {
@@ -328,11 +348,18 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 100%;
 	margin: 22px auto 36px;
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
 
-	img {
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
 		width: 100%;
+		height: 100%;
 	}
 }
 
@@ -434,6 +461,7 @@
 
 .offer {
 	padding: 50px 0 62px;
+
 	h2 {
 		font-size: 26px;
 	}
@@ -525,6 +553,7 @@
 @media (max-width: 768px) {
 	.offer {
 		padding: 30px 0;
+
 		h2 {
 			margin: 0 0 30px;
 		}
@@ -539,6 +568,7 @@
 		width: 100%;
 		font-size: 16px;
 		margin: 0 auto 30px;
+
 		&::before {
 			transform: none;
 			left: 0;
@@ -552,24 +582,26 @@
 		}
 
 		&:hover {
-			.problem__icon { 
+
+			.problem__icon {
 				left: 20px;
 			}
 		}
 
 		.problem__title {
-			font-size: 16px;
+			font-size: 18px;
+			text-align: left;
 		}
 	}
 
 	.block_title {
 		padding: 16px 20px 16px 130px;
-		
+
 	}
 
 	.in {
 		.block_title {
-		padding: 16px 20px 16px 130px;
+			padding: 16px 20px 16px 130px;
 		}
 
 		.problem__icon {
@@ -588,16 +620,25 @@
 
 @media (max-width: 480px) {
 	.panel_heading {
-	 .problem__icon {
-		 width: 65px;
-		 height: 35px;
-		 top: -17px;
-	 }
+		.problem__icon {
+			width: 95px;
+			height: 53px;
+			top: -27px;
+		}
 	}
 
-	.in .block_title,
+.in .block_title {
+	padding: 50px 20px 0 32px;
+}
+
 	.block_title {
-		padding: 16px 20px 16px 90px;
+		padding: 20px 24px 20px 120px;
+	}
+
+	.problem__item__icon-arrow {
+		display: flex;
+		min-width: 10px;
+		margin: 0 0 0 12px;
 	}
 
 	.question-box .btn {

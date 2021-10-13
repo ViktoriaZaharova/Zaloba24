@@ -89,6 +89,7 @@
 	h2 {
 		margin: 0 0 30px 20px;
 		font-size: 26px;
+		max-width: none;
 	}
 
 	.box-text {
@@ -118,8 +119,10 @@
 	padding: 65px 0 48px;
 
 	h2 {
-		margin: 0 0 30px;
+		margin: 0 auto 30px;
 		font-size: 26px;
+		display: block;
+		width: fit-content;
 	}
 }
 
